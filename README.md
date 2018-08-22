@@ -28,14 +28,18 @@
 ## 编程范式
 
 ## 数据结构
-- [数据结构动画网站](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) - 以动画的方式展示数据结构, 非常直观.
+- [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) - 以动画的方式展示数据结构, 非常直观.
 
 ## Algorithm 算法
 - 基础知识
-  - [算法](https://book.douban.com/subject/10432347/) - 算法领域的经典参考书, 给出了50个程序员应该知道的算法. 深入浅出的算法介绍, 让一些比较难的算法也比较容易理解, 尤其是书中对红黑树的讲解非常精彩. 缺点是不深入, 缺少算法设计内容. 甚至动态规划都未提及. 
+  - [算法](https://book.douban.com/subject/10432347/) - 算法领域的经典参考书, 给出了50个程序员应该知道的算法. 深入浅出的算法介绍, 让一些比较难的算法也比较容易理解, 尤其是书中对红黑树的讲解非常精彩. 缺点是不深入, 缺少算法设计内容. 甚至动态规划都未提及.[配套的网站](https://algs4.cs.princeton.edu/home/)提供了丰富的数据结构和算法的资料. 
   - [图解算法](https://book.douban.com/subject/26979890/) - 比较生动的一本算法书
   - [编程珠玑](https://book.douban.com/subject/26302533/) - 
-
+- 算法列表
+  - 查找算法
+    - 二分查找
+    
+  - 排序算法
 ### 资料
 - [List_of_algorithms](https://www.wikiwand.com/en/List_of_algorithms) - 罗列了很多算法, 完全可以当做算法字典, 或用来开阔眼界.
 - [leetcode](https://leetcode.com/) - 一个算法在线练习网站
