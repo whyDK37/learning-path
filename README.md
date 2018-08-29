@@ -41,35 +41,49 @@
 ## Algorithm 算法
 - 基础知识
   - [图解算法](https://book.douban.com/subject/26979890/) - 比较生动的一本算法书
+    - 练习题
+      - 6.3 请问下面的三个列表哪些可行、哪些不可行？
   - [算法](https://book.douban.com/subject/10432347/) - 算法领域的经典参考书, 给出了50个程序员应该知道的算法. 深入浅出的算法介绍, 让一些比较难的算法也比较容易理解, 尤其是书中对红黑树的讲解非常精彩. 缺点是不深入, 缺少算法设计内容. 甚至动态规划都未提及. 
   - [编程珠玑](https://book.douban.com/subject/26302533/) - 
   - [算法导论](https://book.douban.com/subject/1885170/) - 不太好肯的一本书, 详细介绍了算法的推导过程, 需要些数学功底.
+  
 - 算法设计思想
   - divide and conquer，D&C 分而治之
   - 动态规划 Dynamic programming(hard to learn)
   - 回溯 back tracing
   - 分治 Divide and Conquer
-- 算法实例
-  - 快速排序(D&C)
   
-  - 基础算法题, 其中有大量的算法题，解这些题都是有套路的
-    - 耗子的理论学科中的介绍
-    - 递归, 深度优先DFS, 广度优先BFS
-    - 折半查找 Binary search
-    - 大量的对树, 数组, 链表, 字符串, hash表的操作.
-    - 蓄水池算法, 统计过去1分钟P99
-    - 服务调度的背包问题
-    - 红黑树
+- 算法实例
+  - [List_of_algorithms](https://www.wikiwand.com/en/List_of_algorithms) - 罗列了很多算法, 完全可以当做算法字典, 或用来开阔眼界.
+  - 快速排序(D&C) 
+  - 广度优先搜索（breadth-first search，BFS）. 
+    - 拓扑排序
+    使用广度优先搜索可以：
+    1. 编写国际跳棋AI，计算最少走多少步就可获胜；
+    2. 编写拼写检查器，计算最少编辑多少个地方就可将错拼的单词改成正确的单词，如将READED改为READER需要编辑一个地方；
+    3. 根据你的人际关系网络找到关系最近的医生。
+    4. 第一类问题：从节点A出发，有前往节点B的路径吗？（在你的人际关系网中，有芒果销售商吗？）
+    5. 第二类问题：从节点A出发，前往节点B的哪条路径最短？（哪个芒果销售商与你的关系最近？）
+  
+- 基础算法题, 其中有大量的算法题，解这些题都是有套路的
+  - 耗子的"理论学科"中的介绍
+  - 递归, 深度优先DFS, 广度优先BFS
+  - 折半查找 Binary search
+  - 大量的对树, 数组, 链表, 字符串, hash表的操作.
+  - 蓄水池算法, 统计过去1分钟P99
+  - 服务调度的背包问题
+  - 红黑树
     
 ### 资料
-- [List_of_algorithms](https://www.wikiwand.com/en/List_of_algorithms) - 罗列了很多算法, 完全可以当做算法字典, 或用来开阔眼界.
 - [leetcode](https://leetcode.com/) - 一个算法在线练习网站
 
 ## 数据库
 ### Mysql
-
+- 书籍
+  - [High Performance MySQL, 3rd Edition](https://book.douban.com/subject/10443458/) 
 
 ## 分布式系统
+
 
 ## 机器学习
 
