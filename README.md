@@ -76,7 +76,7 @@
     
 ### 资料
 - [leetcode](https://leetcode.com/) - 一个算法在线练习网站
-
+  - [陈浩的 leetcode](https://github.com/haoel/leetcode)
 ## 数据库
 ### Mysql
 - 书籍
