@@ -26,7 +26,7 @@ def search(name):
         # Only search this person if you haven't already searched them.
         if person not in searched:
             if person_is_seller(person):
-                print person + " is a mango seller!"
+                print(person + " is a mango seller!")
                 return True
             else:
                 search_queue += graph[person]
@@ -35,4 +35,4 @@ def search(name):
     return False
 
 
-print search("you")
+print(search("you"))
