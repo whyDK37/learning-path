@@ -1,2 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
 /.idea/
+.gradle/
+algorithms/algorithms.iml
+algorithms/out/
+algorithms/target/
+learning-path.iml
+venv/
