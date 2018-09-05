@@ -26,8 +26,10 @@
 #### 其他资料
 - [awesome-java](https://github.com/akullpp/awesome-java) - A curated list of awesome Java frameworks, libraries and software.
 - [Regular Expression Matching Can Be Simple And Fast (but is slow in Java, Perl, PHP, Python, Ruby, ...)](https://swtch.com/~rsc/regexp/regexp1.html) - This is a tale of two approaches to regular expression matching. One of them is in widespread use in the standard interpreters for many languages, including Perl. The other is used only in a few places, notably most implementations of awk and grep. The two approaches have wildly different performance characteristics:
+- [在线分析GC gceasy](http://gceasy.io/)
 
 ### [Golang](https://golang.org/)
+- [Go in Action](https://book.douban.com/subject/25858023/)
 - [Go语言高级进阶篇](https://blog.csdn.net/column/details/gosenior.html)
 
 ## 编程范式
@@ -56,8 +58,10 @@
 - 算法实例
   - [List_of_algorithms](https://www.wikiwand.com/en/List_of_algorithms) - 罗列了很多算法, 完全可以当做算法字典, 或用来开阔眼界.
   - 快速排序(D&C) 
+  - [蚂蚁算法](https://baike.baidu.com/item/%E8%9A%81%E7%BE%A4%E7%AE%97%E6%B3%95/9646604?fromtitle=%E8%9A%82%E8%9A%81%E7%AE%97%E6%B3%95&fromid=9585934)
   - 广度优先搜索（breadth-first search，BFS）. 
     - 拓扑排序
+    
     使用广度优先搜索可以：
     1. 编写国际跳棋AI，计算最少走多少步就可获胜；
     2. 编写拼写检查器，计算最少编辑多少个地方就可将错拼的单词改成正确的单词，如将READED改为READER需要编辑一个地方；
