@@ -32,12 +32,23 @@
 - [Go in Action](https://book.douban.com/subject/25858023/)
 - [Go语言高级进阶篇](https://blog.csdn.net/column/details/gosenior.html)
 
-## 编程范式
+## 编程模型/范式
+### I/O模型
+
+#### 阻塞I/O
+#### 非阻塞I/O
+#### I/O 的多路复用( select 和 poll )
+#### 信号驱动的 I/O (SIGIO)
+#### 异步 I/O ( POSIX 的 aio_functions)
+
+### Lock-Free 编程
+
+
 ### 函数式编程
 - [Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html)
 
 ## 数据结构
-- [6.851: Advanced Data Structures (Fall'17)](http://courses.csail.mit.edu/6.851/fall17/lectures/) - MIT 高级数据结构课程.
+- [6.851: Advanced Data Structures (Fall'17)](http://courses.csail.mit.edu/6.851/fall17/lectures/) - MIT 高级数据结构课程.[youtube 地址](https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf)
 - [数据结构动画网站](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) - 以动画的方式展示数据结构, 非常直观.
 
 ## Algorithm 算法
@@ -109,3 +120,6 @@
 
 ### 其他
 - [编程语言排行](https://www.tiobe.com/tiobe-index/)
+
+## 工具
+- [youtube 视频下载](https://qdownloader.net/), [youtube 字幕下载](http://mo.dbxdb.com/setting.html)
