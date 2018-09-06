@@ -111,16 +111,18 @@
   - [Algorithms and Data Structures ](http://www.ethoberon.ethz.ch/WirthPubl/AD.pdf) - 算法和数据结构. 综合这两篇论文, 可以得到公式: 程序=数据结构+逻辑+控制
 
 ## 资料集散地
+### 论坛, 博客
+  
+### 其他
+- [编程语言排行](https://www.tiobe.com/tiobe-index/)
 - [The Key To Accelerating Your Coding Skills](http://blog.thefirehoseproject.com/posts/learn-to-code-and-be-self-reliant/) - When you learn to code, there is a moment when everything begins to change. At Firehose, we like to call this the inflection point of coding. After this phase, the way you operate as a developer will be dramatically different. Building up to the inflection point is the process of becoming self-sufficient in programming, to the point where you no longer need any hand-holding. It can be a frustrating experience, but once it’s behind you, it is incredibly empowering. 
 - [Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html)
 - [awesome-java](https://github.com/akullpp/awesome-java)  - A curated list of awesome Java frameworks, libraries and software. 
 - [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html)
 - [What-are-some-of-the-most-basic-things-every-programmer-should-know](https://www.quora.com/What-are-some-of-the-most-basic-things-every-programmer-should-know)
+
 ## 软技能
 ### 面试技巧
-
-### 其他
-- [编程语言排行](https://www.tiobe.com/tiobe-index/)
 
 ## 工具
 - [youtube 视频下载](https://qdownloader.net/), [youtube 字幕下载](http://mo.dbxdb.com/setting.html)
