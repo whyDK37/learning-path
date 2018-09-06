@@ -60,7 +60,7 @@
   - 快速排序(D&C) 
   - [蚂蚁算法](https://baike.baidu.com/item/%E8%9A%81%E7%BE%A4%E7%AE%97%E6%B3%95/9646604?fromtitle=%E8%9A%82%E8%9A%81%E7%AE%97%E6%B3%95&fromid=9585934)
   - 广度优先搜索（breadth-first search，BFS）. 
-    - 拓扑排序
+    - [Topological Sorting | 拓扑排序](https://www.wikiwand.com/en/Topological_sorting)
     
     使用广度优先搜索可以：
     1. 编写国际跳棋AI，计算最少走多少步就可获胜；
