@@ -15,10 +15,9 @@ subprojects {
 
     repositories {
         mavenLocal()
-
-        maven { url "http://artifactory.jd.com/libs-releases" }
-        maven { url "http://artifactory.jd.com/libs-snapshots" }
-        maven { url "https://plugins.gradle.org/m2/" }
+        jcenter()
+        maven { url "http://repo.maven.apache.org/maven2" }
+        maven { url "https://oss.sonatype.org/content/groups/public/" }
     }
 
 
