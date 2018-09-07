@@ -115,7 +115,8 @@
   - [Algorithms and Data Structures ](http://www.ethoberon.ethz.ch/WirthPubl/AD.pdf) - 算法和数据结构. 综合这两篇论文, 可以得到公式: 程序=数据结构+逻辑+控制
 
 ## 资料集散地
-### 论坛, 博客
+### 博客
+- [cool shell](https://coolshell.cn)
   
 ### 其他
 - [编程语言排行](https://www.tiobe.com/tiobe-index/)
