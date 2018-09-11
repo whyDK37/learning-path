@@ -35,6 +35,7 @@
 ### [Golang](https://golang.org/)
 - [Go in Action](https://book.douban.com/subject/25858023/)
 - [Go语言高级进阶篇](https://blog.csdn.net/column/details/gosenior.html)
+- [go users](https://github.com/golang/go/wiki/GoUsers)
 
 ## 编程模型/范式
 ### I/O模型
@@ -44,6 +45,7 @@
 #### I/O 的多路复用( select 和 poll )
 #### 信号驱动的 I/O (SIGIO)
 #### 异步 I/O ( POSIX 的 aio_functions)
+- [Boost application performance using asynchronous I/O](https://www.ibm.com/developerworks/library/l-async/) ibm Boost application performance using asynchronous I/O
 
 ### Lock-Free 编程
 
@@ -59,7 +61,7 @@
 - 基础知识
   - [图解算法](https://book.douban.com/subject/26979890/) - 比较生动的一本算法书
     - 练习题
-      - 6.3 请问下面的三个列表哪些可行、哪些不可行？
+      - 6.3 拓扑排序 Topological Sorting, 请问下面的三个列表哪些可行、哪些不可行？
   - [算法](https://book.douban.com/subject/10432347/) - 算法领域的经典参考书 , 给出了50个程序员应该知道的算法. 深入浅出的算法介绍, 让一些比较难的算法也比较容易理解, 尤其是书中对红黑树的讲解非常精彩. 缺点是不深入, 缺少算法设计内容. 甚至动态规划都未提及.
   [官网](https://algs4.cs.princeton.edu/home/) 
   - [编程珠玑](https://book.douban.com/subject/26302533/) - 
@@ -76,7 +78,7 @@
   - 快速排序(D&C) 
   - [蚂蚁算法](https://baike.baidu.com/item/%E8%9A%81%E7%BE%A4%E7%AE%97%E6%B3%95/9646604?fromtitle=%E8%9A%82%E8%9A%81%E7%AE%97%E6%B3%95&fromid=9585934)
   - 广度优先搜索（breadth-first search，BFS）. 
-    - [Topological Sorting | 拓扑排序](https://www.wikiwand.com/en/Topological_sorting)
+    - [Topological Sorting | 拓扑排序](https://www.wikiwand.com/en/Topological_sorting) In the field of computer science, a topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering. 
     
     使用广度优先搜索可以：
     1. 编写国际跳棋AI，计算最少走多少步就可获胜；
