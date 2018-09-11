@@ -51,8 +51,12 @@
 ### Lock-Free 编程
 
 
-### 函数式编程
-- [Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html)
+### 编程范式
+- [Programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) wiki
+- [Programming paradigm](http://cs.lmu.edu/~ray/notes/paradigms/)
+- [Six programming paradigms that will change how you think about coding](https://www.ybrikman.com/writing/2014/04/09/six-programming-paradigms-that-will/) [中文翻译](https://my.oschina.net/editorial-story/blog/890965)
+- [Programming Paradigms for Dummies: What Every Programmer Should Know](https://www.info.ucl.ac.be/~pvr/VanRoyChapter.pdf) 
+- [Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html) 
 
 ## 数据结构
 - [6.851: Advanced Data Structures (Fall'17)](http://courses.csail.mit.edu/6.851/fall17/lectures/) - MIT 高级数据结构课程.[youtube 地址](https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf)
@@ -107,7 +111,32 @@
 
 ## 分布式系统
 
-
+## 软件设计
+- 原则
+  - [Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+  - [KISS principle](https://en.wikipedia.org/wiki/KISS_principle)
+  - program to interface, not an implimentation
+  - [You aren't gonna need it](http://en.wikipedia.org/wiki/You_Ain%27t_Gonna_Need_It)
+  - [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter) 迪米特法则
+  - [Solid](https://en.wikipedia.org/wiki/Solid)
+  - [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle) 里氏替换原则
+  - [Internet service provider](https://en.wikipedia.org/wiki/Internet_service_provider) 接口隔离原则
+  - [Dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) 依赖倒置原则
+  - [Common Closure Principle](http://wiki.c2.com/?CommonClosurePrinciple) 共同封闭原则
+  - [Common Reuse Principle](http://wiki.c2.com/?CommonReusePrinciple) 共同重用原则
+  - [Hollywood Principle](https://en.m.wikipedia.org/wiki/Hollywood_Principle) 好莱坞原则, "don`t call us, we`ll call you.". 是IOC, DI 的基础.[Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html)
+  - [High Cohesion](https://en.wikipedia.org/wiki/Cohesion_(computer_science)) & [Low/Loose coupling](https://en.m.wikipedia.org/wiki/Coupling_(computer_programming))  高内聚, 低耦合. [对于面向对象来说, 可以看看马塞诸塞州戈登学院的面向对象的一节讲义](http://www.math-cs.gordon.edu/courses/cs211/lectures-2009/Cohesion,Coupling,MVC.pdf)
+  - [Convention over configuration](https://en.wikipedia.org/wiki/Convention_over_configuration) 惯例优于配置原则. 简单说, 就是将一些公认的配置方式和信息作为内部缺省规则来使用. 例如 Maven 的项目结构, Hibernate 的映射文件.
+  - [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) 关注点分离. SoC 是计算机科学中最重要的努力目标之一. 这个原则是软件开发中, 通过各种手段, 将问题的各个关注点分开. 如果一个问题能分解为独立且较小的问题, 就是相对较容易解决的.
+  - [Design by contract](https://en.m.wikipedia.org/wiki/Design_by_contract) 契约式设计. DbC 的核心思想是对软件系统中的元素之间相互合作以及责任和义务的比喻. 这种比喻从商业活动中客户与 供应商达成契约而来.如果在程序设计中一个模块提供了某种功能, 那么它要:
+    1. 期望所有调用他的客户模块都保证一定的进入条件: 这就是模块的先验条件, 
+    2. 保证退出时给出特定的属性: 这就是模块的后验条件( 供应商的义务, 显然也是客户的权利)
+    3. 在进入时假定, 并在退出时保证一些特定的属性: 不变式.
+  - [Acyclic Dependencies Principle](http://wiki.c2.com/?AcyclicDependenciesPrinciple=) 无环依赖原则
+  
+- 书籍
+  - [领域驱动设计](https://book.douban.com/subject/1629512/)
+  - [How to Design a Good API & Why it Matters](https://www.infoq.com/presentations/effective-api-design) 
 ## 机器学习
 
 
