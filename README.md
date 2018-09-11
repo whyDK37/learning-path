@@ -33,9 +33,10 @@
 - [在线分析GC gceasy](http://gceasy.io/)
 
 ### [Golang](https://golang.org/)
+- [go github](https://github.com/golang/go)
+  - [go users](https://github.com/golang/go/wiki/GoUsers)
 - [Go in Action](https://book.douban.com/subject/25858023/)
 - [Go语言高级进阶篇](https://blog.csdn.net/column/details/gosenior.html)
-- [go users](https://github.com/golang/go/wiki/GoUsers)
 
 ## 编程模型/范式
 ### I/O模型
