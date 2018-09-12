@@ -136,6 +136,8 @@
   
 - 书籍
   - [领域驱动设计](https://book.douban.com/subject/1629512/)
+  - [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) 如果你读过 [Clean coode | 代码整洁之道](https://book.douban.com/subject/4199741/), [The Clean coder | 程序员的职业素养](https://book.douban.com/subject/11614538/) 都是出自 Bob 大叔 之手. Clean architecture 也是一本书, 这是一本很不错的架构类图书. 对软件架构的元素, 方法等讲的很清楚. 实例都比较简单, 并带一些软件变化历史的讲述, 可开阔视野.
+  - [The Twelve-Factor App](https://12factor.net/)如今，软件通常会作为一种服务来交付，它们被称为网络应用程序，或软件即服务（SaaS）。12-Factor 为构建SaaS 应用提供了方法论，这也是架构师必读的文章。（[中译版](https://12factor.net/zh_cn/)） 这篇文章在业内的影响力很大，必读！
   - [How to Design a Good API & Why it Matters](https://www.infoq.com/presentations/effective-api-design) 
 ## 机器学习
 
