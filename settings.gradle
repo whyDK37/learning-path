@@ -1,4 +1,6 @@
 rootProject.name = 'learning-path'
 include ':algorithms'
+include ':go'
 
 project(':algorithms').projectDir = "$rootDir/algorithms" as File
+project(':go').projectDir = "$rootDir/go" as File
