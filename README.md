@@ -104,6 +104,10 @@
 ### 资料
 - [leetcode](https://leetcode.com/) - 一个算法在线练习网站
   - [陈浩的 leetcode](https://github.com/haoel/leetcode)
+
+- 论文
+  - [Algorithm = Logic + Control](https://www.doc.ic.ac.uk/~rak/papers/algorithm%20=%20logic%20+%20control.pdf) - 算法是逻辑+控制
+  - [Algorithms and Data Structures ](http://www.ethoberon.ethz.ch/WirthPubl/AD.pdf) - 算法和数据结构. 综合这两篇论文, 可以得到公式: 程序=数据结构+逻辑+控制  
 ## 数据库
 ### Mysql
 - 书籍
@@ -144,9 +148,6 @@
 
 ### 资料
 - 基本算法
-- 论文
-  - [Algorithm = Logic + Control](https://www.doc.ic.ac.uk/~rak/papers/algorithm%20=%20logic%20+%20control.pdf) - 算法是逻辑+控制
-  - [Algorithms and Data Structures ](http://www.ethoberon.ethz.ch/WirthPubl/AD.pdf) - 算法和数据结构. 综合这两篇论文, 可以得到公式: 程序=数据结构+逻辑+控制
 
 ## 资料集散地
 ### 博客
