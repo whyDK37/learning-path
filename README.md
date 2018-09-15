@@ -59,6 +59,7 @@
 - [Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html) 
 
 ## 数据结构
+- [ring buffer](https://en.wikipedia.org/wiki/Circular_buffer) A ring showing, conceptually, a circular buffer. This visually shows that the buffer has no real end and it can loop around the buffer. However, since memory is never physically created as a ring, a linear representation is generally used as is done below. A circular buffer, circular queue, cyclic buffer or ring buffer is a data structure that uses a single, fixed-size buffer as if it were connected end-to-end. This structure lends itself easily to buffering data streams.
 - [6.851: Advanced Data Structures (Fall'17)](http://courses.csail.mit.edu/6.851/fall17/lectures/) - MIT 高级数据结构课程.[youtube 地址](https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf)
 - [数据结构动画网站](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) - 以动画的方式展示数据结构, 非常直观.
 
