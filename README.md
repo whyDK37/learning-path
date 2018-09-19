@@ -154,15 +154,23 @@
 ### 博客
 - [medium](https://medium.com/) 文章的集散地
 - [cool shell](https://coolshell.cn)
-- [杰夫·阿特伍德（Jeff Atwood）](https://blog.codinghorror.com/)  
+- [杰夫·阿特伍德（Jeff Atwood）](https://blog.codinghorror.com/) 
+  - [高效能程序员的修炼](https://book.douban.com/subject/24868904/)
+  - [程序员的修炼](https://book.douban.com/subject/25880845/)
+  - [Effective Programming](https://book.douban.com/subject/11639780/)
   - https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/
 - https://www.joelonsoftware.com/
-- http://blog.cleancoder.com/ 是編程大师 Bob大叔的博客, 其真名叫 Robert C. Martin, 世界级软件开发大师, 设计模式和敏捷开发先驱.
+- http://blog.cleancoder.com/ 是編程大师 Bob大叔的博客, 其真名叫 Robert C. Martin, 世界级软件开发大师, 设计模式和敏捷开发先驱. 
+  - Bob 大叔的书籍
+  - [程序员的职业素养](https://book.douban.com/subject/11614538/)
+  - [代码整洁之道](https://book.douban.com/subject/4199741/)
 - https://martinfowler.com/ Marting 主要专注面向对象分析和设计, 统一建模语言, 领域建模, 以及敏捷软件开发方法.
 - http://www.paulgraham.com/articles.html
 - [think in java 作者的博客](http://bruceeckel.github.io/)
 - [dzone](https://dzone.com/)
 ​  
+### 图书
+- [软件随想录](https://book.douban.com/subject/4163938/)
 ### 其他
 - [编程语言排行](https://www.tiobe.com/tiobe-index/)
 - [The Key To Accelerating Your Coding Skills](http://blog.thefirehoseproject.com/posts/learn-to-code-and-be-self-reliant/) - When you learn to code, there is a moment when everything begins to change. At Firehose, we like to call this the inflection point of coding. After this phase, the way you operate as a developer will be dramatically different. Building up to the inflection point is the process of becoming self-sufficient in programming, to the point where you no longer need any hand-holding. It can be a frustrating experience, but once it’s behind you, it is incredibly empowering. 
