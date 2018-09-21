@@ -128,7 +128,8 @@
   - [Internet service provider](https://en.wikipedia.org/wiki/Internet_service_provider) 接口隔离原则
   - [Dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) 依赖倒置原则
   - [Common Closure Principle](http://wiki.c2.com/?CommonClosurePrinciple) 共同封闭原则
-  - [Common Reuse Principle](http://wiki.c2.com/?CommonReusePrinciple) 共同重用原则
+  - [Common Reuse Principle | 共同重用原则](http://wiki.c2.com/?CommonReusePrinciple) 共同重用原则
+  - [Principle of least astonishment | 最少惊诧原则](https://en.wikipedia.org/wiki/Principle_of_least_astonishment)
   - [Hollywood Principle](https://en.m.wikipedia.org/wiki/Hollywood_Principle) 好莱坞原则, "don`t call us, we`ll call you.". 是IOC, DI 的基础.[Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html)
   - [High Cohesion](https://en.wikipedia.org/wiki/Cohesion_(computer_science)) & [Low/Loose coupling](https://en.m.wikipedia.org/wiki/Coupling_(computer_programming))  高内聚, 低耦合. [对于面向对象来说, 可以看看马塞诸塞州戈登学院的面向对象的一节讲义](http://www.math-cs.gordon.edu/courses/cs211/lectures-2009/Cohesion,Coupling,MVC.pdf)
   - [Convention over configuration](https://en.wikipedia.org/wiki/Convention_over_configuration) 惯例优于配置原则. 简单说, 就是将一些公认的配置方式和信息作为内部缺省规则来使用. 例如 Maven 的项目结构, Hibernate 的映射文件.
