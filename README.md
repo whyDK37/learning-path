@@ -181,6 +181,7 @@
 - [awesome-java](https://github.com/akullpp/awesome-java)  - A curated list of awesome Java frameworks, libraries and software. 
 - [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html)
 - [What-are-some-of-the-most-basic-things-every-programmer-should-know](https://www.quora.com/What-are-some-of-the-most-basic-things-every-programmer-should-know)
+- [Pro Git](https://git-scm.com/book/en/v2) 如果要了解一个版本管理工具的话, git是首选.
 
 ## 软技能
 ### 面试技巧
