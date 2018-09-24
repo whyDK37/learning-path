@@ -174,6 +174,7 @@
 ​  
 ### 图书
 - [软件随想录](https://book.douban.com/subject/4163938/)
+- [Pro Git](https://git-scm.com/book/en/v2) 如果要了解一个版本管理工具的话, git是首选.
 ### 其他
 - [编程语言排行](https://www.tiobe.com/tiobe-index/)
 - [The Key To Accelerating Your Coding Skills](http://blog.thefirehoseproject.com/posts/learn-to-code-and-be-self-reliant/) - When you learn to code, there is a moment when everything begins to change. At Firehose, we like to call this the inflection point of coding. After this phase, the way you operate as a developer will be dramatically different. Building up to the inflection point is the process of becoming self-sufficient in programming, to the point where you no longer need any hand-holding. It can be a frustrating experience, but once it’s behind you, it is incredibly empowering. 
@@ -181,7 +182,6 @@
 - [awesome-java](https://github.com/akullpp/awesome-java)  - A curated list of awesome Java frameworks, libraries and software. 
 - [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html)
 - [What-are-some-of-the-most-basic-things-every-programmer-should-know](https://www.quora.com/What-are-some-of-the-most-basic-things-every-programmer-should-know)
-- [Pro Git](https://git-scm.com/book/en/v2) 如果要了解一个版本管理工具的话, git是首选.
 
 ## 软技能
 ### 面试技巧
