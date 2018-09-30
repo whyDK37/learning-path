@@ -1,15 +1,15 @@
 # learning-path
 学习路径
 
-## 基础知识 
+## 基础知识
 - 系统
-  - [《深入理解计算机系统》，《Computer System A programmer`s prespective](https://book.douban.com/subject/26912767/) - 程序员需要了解的计算机知识. 描述了计算机系统的实现细节, 帮助在大脑中构建一个层次型的计算机. 这是程序员必读的一本书. 
+  - [《深入理解计算机系统》，《Computer System A programmer`s prespective](https://book.douban.com/subject/26912767/) - 程序员需要了解的计算机知识. 描述了计算机系统的实现细节, 帮助在大脑中构建一个层次型的计算机. 这是程序员必读的一本书.
 
 - 网络
   - [TCP 的那些事儿（上）](https://coolshell.cn/articles/11564.html)
   - [TCP 的那些事儿（下）](https://coolshell.cn/articles/11609.html) 状态机, 拥塞控制中心, windows 滑动窗口
   - [图解TCP/IP](https://book.douban.com/subject/24737674/) - 快速入门书籍
-  - [C10K 问题](http://www.kegel.com/c10k.html) 
+  - [C10K 问题](http://www.kegel.com/c10k.html)
     - [The Secret To 10 Million Concurrent Connections -The Kernel Is The Problem, Not The Solution](http://highscalability.com/blog/2013/5/13/the-secret-to-10-million-concurrent-connections-the-kernel-i.html)
 ## Linux 系统
 
@@ -55,8 +55,8 @@
 - [Programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) wiki
 - [Programming paradigm](http://cs.lmu.edu/~ray/notes/paradigms/)
 - [Six programming paradigms that will change how you think about coding](https://www.ybrikman.com/writing/2014/04/09/six-programming-paradigms-that-will/) [中文翻译](https://my.oschina.net/editorial-story/blog/890965)
-- [Programming Paradigms for Dummies: What Every Programmer Should Know](https://www.info.ucl.ac.be/~pvr/VanRoyChapter.pdf) 
-- [Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html) 
+- [Programming Paradigms for Dummies: What Every Programmer Should Know](https://www.info.ucl.ac.be/~pvr/VanRoyChapter.pdf)
+- [Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html)
 
 ## 数据结构
 - [ring buffer](https://en.wikipedia.org/wiki/Circular_buffer) A ring showing, conceptually, a circular buffer. This visually shows that the buffer has no real end and it can loop around the buffer. However, since memory is never physically created as a ring, a linear representation is generally used as is done below. A circular buffer, circular queue, cyclic buffer or ring buffer is a data structure that uses a single, fixed-size buffer as if it were connected end-to-end. This structure lends itself easily to buffering data streams.
@@ -69,30 +69,30 @@
     - 练习题
       - 6.3 拓扑排序 Topological Sorting, 请问下面的三个列表哪些可行、哪些不可行？
   - [算法](https://book.douban.com/subject/10432347/) - 算法领域的经典参考书 , 给出了50个程序员应该知道的算法. 深入浅出的算法介绍, 让一些比较难的算法也比较容易理解, 尤其是书中对红黑树的讲解非常精彩. 缺点是不深入, 缺少算法设计内容. 甚至动态规划都未提及.
-  [官网](https://algs4.cs.princeton.edu/home/) 
-  - [编程珠玑](https://book.douban.com/subject/26302533/) - 
+  [官网](https://algs4.cs.princeton.edu/home/)
+  - [编程珠玑](https://book.douban.com/subject/26302533/) -
   - [算法导论](https://book.douban.com/subject/1885170/) - 不太好肯的一本书, 详细介绍了算法的推导过程, 需要些数学功底.
-  
+
 - 算法设计思想
   - divide and conquer，D&C 分而治之
   - 动态规划 Dynamic programming(hard to learn)
   - 回溯 back tracing
   - 分治 Divide and Conquer
-  
+
 - 算法实例
   - [List_of_algorithms](https://www.wikiwand.com/en/List_of_algorithms) - 罗列了很多算法, 完全可以当做算法字典, 或用来开阔眼界.
-  - 快速排序(D&C) 
+  - 快速排序(D&C)
   - [蚂蚁算法](https://baike.baidu.com/item/%E8%9A%81%E7%BE%A4%E7%AE%97%E6%B3%95/9646604?fromtitle=%E8%9A%82%E8%9A%81%E7%AE%97%E6%B3%95&fromid=9585934)
-  - 广度优先搜索（breadth-first search，BFS）. 
-    - [Topological Sorting | 拓扑排序](https://www.wikiwand.com/en/Topological_sorting) In the field of computer science, a topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering. 
-    
+  - 广度优先搜索（breadth-first search，BFS）.
+    - [Topological Sorting | 拓扑排序](https://www.wikiwand.com/en/Topological_sorting) In the field of computer science, a topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering.
+
     使用广度优先搜索可以：
     1. 编写国际跳棋AI，计算最少走多少步就可获胜；
     2. 编写拼写检查器，计算最少编辑多少个地方就可将错拼的单词改成正确的单词，如将READED改为READER需要编辑一个地方；
     3. 根据你的人际关系网络找到关系最近的医生。
     4. 第一类问题：从节点A出发，有前往节点B的路径吗？（在你的人际关系网中，有芒果销售商吗？）
     5. 第二类问题：从节点A出发，前往节点B的哪条路径最短？（哪个芒果销售商与你的关系最近？）
-  
+
 - 基础算法题, 其中有大量的算法题，解这些题都是有套路的
   - 耗子的"理论学科"中的介绍
   - 递归, 深度优先DFS, 广度优先BFS
@@ -101,7 +101,7 @@
   - 蓄水池算法, 统计过去1分钟P99
   - 服务调度的背包问题
   - 红黑树
-    
+
 ### 资料
 - [leetcode](https://leetcode.com/) - 一个算法在线练习网站
   - [陈浩的 leetcode](https://github.com/haoel/leetcode)
@@ -112,7 +112,7 @@
 ## 数据库
 ### Mysql
 - 书籍
-  - [High Performance MySQL, 3rd Edition](https://book.douban.com/subject/10443458/) 
+  - [High Performance MySQL, 3rd Edition](https://book.douban.com/subject/10443458/)
 
 ## 分布式系统
 
@@ -135,16 +135,16 @@
   - [Convention over configuration](https://en.wikipedia.org/wiki/Convention_over_configuration) 惯例优于配置原则. 简单说, 就是将一些公认的配置方式和信息作为内部缺省规则来使用. 例如 Maven 的项目结构, Hibernate 的映射文件.
   - [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) 关注点分离. SoC 是计算机科学中最重要的努力目标之一. 这个原则是软件开发中, 通过各种手段, 将问题的各个关注点分开. 如果一个问题能分解为独立且较小的问题, 就是相对较容易解决的.
   - [Design by contract](https://en.m.wikipedia.org/wiki/Design_by_contract) 契约式设计. DbC 的核心思想是对软件系统中的元素之间相互合作以及责任和义务的比喻. 这种比喻从商业活动中客户与 供应商达成契约而来.如果在程序设计中一个模块提供了某种功能, 那么它要:
-    1. 期望所有调用他的客户模块都保证一定的进入条件: 这就是模块的先验条件, 
+    1. 期望所有调用他的客户模块都保证一定的进入条件: 这就是模块的先验条件,
     2. 保证退出时给出特定的属性: 这就是模块的后验条件( 供应商的义务, 显然也是客户的权利)
     3. 在进入时假定, 并在退出时保证一些特定的属性: 不变式.
   - [Acyclic Dependencies Principle](http://wiki.c2.com/?AcyclicDependenciesPrinciple=) 无环依赖原则
-  
+
 - 书籍
   - [领域驱动设计](https://book.douban.com/subject/1629512/)
   - [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) 如果你读过 [Clean coode | 代码整洁之道](https://book.douban.com/subject/4199741/), [The Clean coder | 程序员的职业素养](https://book.douban.com/subject/11614538/) 都是出自 Bob 大叔 之手. Clean architecture 也是一本书, 这是一本很不错的架构类图书. 对软件架构的元素, 方法等讲的很清楚. 实例都比较简单, 并带一些软件变化历史的讲述, 可开阔视野.
   - [The Twelve-Factor App](https://12factor.net/)如今，软件通常会作为一种服务来交付，它们被称为网络应用程序，或软件即服务（SaaS）。12-Factor 为构建SaaS 应用提供了方法论，这也是架构师必读的文章。（[中译版](https://12factor.net/zh_cn/)） 这篇文章在业内的影响力很大，必读！
-  - [How to Design a Good API & Why it Matters](https://www.infoq.com/presentations/effective-api-design) 
+  - [How to Design a Good API & Why it Matters](https://www.infoq.com/presentations/effective-api-design)
 ## 机器学习
 
 
@@ -155,7 +155,7 @@
 ### 博客
 - [medium](https://medium.com/) 文章的集散地
 - [cool shell](https://coolshell.cn)
-- [杰夫·阿特伍德（Jeff Atwood）](https://blog.codinghorror.com/) 
+- [杰夫·阿特伍德（Jeff Atwood）](https://blog.codinghorror.com/)
   - [高效能程序员的修炼](https://book.douban.com/subject/24868904/)
     - [Best Practices for Speeding Up Your Web Site](https://developer.yahoo.com/performance/rules.html)
     - [YSlow: Yahoo's Problems Are Not Your Problems](https://blog.codinghorror.com/yslow-yahoos-problems-are-not-your-problems/)
@@ -163,7 +163,7 @@
   - [Effective Programming](https://book.douban.com/subject/11639780/)
   - https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/
 - https://www.joelonsoftware.com/
-- http://blog.cleancoder.com/ 是編程大师 Bob大叔的博客, 其真名叫 Robert C. Martin, 世界级软件开发大师, 设计模式和敏捷开发先驱. 
+- http://blog.cleancoder.com/ 是編程大师 Bob大叔的博客, 其真名叫 Robert C. Martin, 世界级软件开发大师, 设计模式和敏捷开发先驱.
   - Bob 大叔的书籍
   - [程序员的职业素养](https://book.douban.com/subject/11614538/)
   - [代码整洁之道](https://book.douban.com/subject/4199741/)
@@ -176,9 +176,9 @@
 - [软件随想录](https://book.douban.com/subject/4163938/)
 ### 其他
 - [编程语言排行](https://www.tiobe.com/tiobe-index/)
-- [The Key To Accelerating Your Coding Skills](http://blog.thefirehoseproject.com/posts/learn-to-code-and-be-self-reliant/) - When you learn to code, there is a moment when everything begins to change. At Firehose, we like to call this the inflection point of coding. After this phase, the way you operate as a developer will be dramatically different. Building up to the inflection point is the process of becoming self-sufficient in programming, to the point where you no longer need any hand-holding. It can be a frustrating experience, but once it’s behind you, it is incredibly empowering. 
+- [The Key To Accelerating Your Coding Skills](http://blog.thefirehoseproject.com/posts/learn-to-code-and-be-self-reliant/) - When you learn to code, there is a moment when everything begins to change. At Firehose, we like to call this the inflection point of coding. After this phase, the way you operate as a developer will be dramatically different. Building up to the inflection point is the process of becoming self-sufficient in programming, to the point where you no longer need any hand-holding. It can be a frustrating experience, but once it’s behind you, it is incredibly empowering.
 - [Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html)
-- [awesome-java](https://github.com/akullpp/awesome-java)  - A curated list of awesome Java frameworks, libraries and software. 
+- [awesome-java](https://github.com/akullpp/awesome-java)  - A curated list of awesome Java frameworks, libraries and software.
 - [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html)
 - [What-are-some-of-the-most-basic-things-every-programmer-should-know](https://www.quora.com/What-are-some-of-the-most-basic-things-every-programmer-should-know)
 
