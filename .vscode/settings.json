@@ -21,5 +21,6 @@
         "enabled": true,
         "delay": 0
     },
-    "python.pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe"
+    "python.pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe",
+    "java.configuration.updateBuildConfiguration": "automatic"
 }
