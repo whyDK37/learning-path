@@ -7,8 +7,7 @@ algorithms/target/
 learning-path.iml
 venv/
 .settings/
-.vscode/
 algorithms/\.*
 algorithms/bin/*
 go/\.*
-\.*
+.project
