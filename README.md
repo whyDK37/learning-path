@@ -122,7 +122,7 @@
   - [KISS principle](https://en.wikipedia.org/wiki/KISS_principle)
   - program to interface, not an implimentation
   - [You aren't gonna need it](http://en.wikipedia.org/wiki/You_Ain%27t_Gonna_Need_It)
-  - [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter) 迪米特法则
+  - [Law of Demeter | 迪米特法则,最少知识原则](https://en.wikipedia.org/wiki/Law_of_Demeter) 
   - [Solid](https://en.wikipedia.org/wiki/Solid)
   - [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle) 里氏替换原则
   - [Internet service provider](https://en.wikipedia.org/wiki/Internet_service_provider) 接口隔离原则
@@ -139,7 +139,7 @@
     2. 保证退出时给出特定的属性: 这就是模块的后验条件( 供应商的义务, 显然也是客户的权利)
     3. 在进入时假定, 并在退出时保证一些特定的属性: 不变式.
   - [Acyclic Dependencies Principle](http://wiki.c2.com/?AcyclicDependenciesPrinciple=) 无环依赖原则
-
+  
 - 书籍
   - [领域驱动设计](https://book.douban.com/subject/1629512/)
   - [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) 如果你读过 [Clean coode | 代码整洁之道](https://book.douban.com/subject/4199741/), [The Clean coder | 程序员的职业素养](https://book.douban.com/subject/11614538/) 都是出自 Bob 大叔 之手. Clean architecture 也是一本书, 这是一本很不错的架构类图书. 对软件架构的元素, 方法等讲的很清楚. 实例都比较简单, 并带一些软件变化历史的讲述, 可开阔视野.

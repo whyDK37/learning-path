@@ -10,7 +10,7 @@
     "go.testFlags": ["-v"],
     "go.formatTool": "goreturns",
     "go.goroot": "C:/go",
-    "go.gopath": "C:\\Users\\wangchao16\\go\\",
+    "go.gopath": "C:\\go-path",
     "go.autocompleteUnimportedPackages": true,
     "go.gocodePackageLookupMode": "go",
     "go.gotoSymbol.includeImports": true,
@@ -21,6 +21,6 @@
         "enabled": true,
         "delay": 0
     },
-    "python.pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe",
+    "python.pythonPath": "D:/Applications/Anaconda3/python.exe",
     "java.configuration.updateBuildConfiguration": "automatic"
 }

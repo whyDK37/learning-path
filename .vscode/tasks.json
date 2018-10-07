@@ -24,7 +24,7 @@
         {
             "label": "Python run",
             "type": "shell",
-            "command": "${workspaceFolder}\\venv\\Scripts\\python.exe",
+            "command": "D:/Applications/Anaconda3/python.exe",
             "args": [
                 "${file}"
             ],
@@ -35,7 +35,8 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher": []
         }
     ]
- }
+}
