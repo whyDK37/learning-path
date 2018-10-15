@@ -22,7 +22,17 @@ def search(name):
     # This array is how you keep track of which people you've searched before.
     searched = []
 
-    return False
+    def solve(man):
+        if person_is_seller(man):
+            return True
+        else:
+            persions = graph[man]
+
+    while search_queue:
+        person = search_queue.popleft()
+        if person not in searched:
+            solve(person)
+    return solve(name)
 
 
 print(search("you"))
