@@ -155,7 +155,7 @@
 ### 博客
 - [medium](https://medium.com/) 文章的集散地
 - [cool shell](https://coolshell.cn)
-- [杰夫·阿特伍德（Jeff Atwood）](https://blog.codinghorror.com/)
+- [杰夫·阿特伍德（Jeff Atwood）](https://blog.codinghorror.com/) [Stack Overflow](https://stackoverflow.com/) 网站创始人.
   - [高效能程序员的修炼](https://book.douban.com/subject/24868904/)
     - [Best Practices for Speeding Up Your Web Site](https://developer.yahoo.com/performance/rules.html)
     - [YSlow: Yahoo's Problems Are Not Your Problems](https://blog.codinghorror.com/yslow-yahoos-problems-are-not-your-problems/)
