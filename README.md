@@ -176,7 +176,6 @@
 ​  
 ### 图书
 - [软件随想录](https://book.douban.com/subject/4163938/)
-- [Pro Git](https://git-scm.com/book/en/v2) 如果要了解一个版本管理工具的话, git是首选.
 - [Patterns of Enterprise Application Architecture | 企业应用架构模式](https://book.douban.com/subject/4826290/) 作者 [美] Martin Fowler , 
 ### 其他
 - [编程语言排行](https://www.tiobe.com/tiobe-index/)
@@ -185,6 +184,12 @@
 - [awesome-java](https://github.com/akullpp/awesome-java)  - A curated list of awesome Java frameworks, libraries and software.
 - [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html)
 - [What-are-some-of-the-most-basic-things-every-programmer-should-know](https://www.quora.com/What-are-some-of-the-most-basic-things-every-programmer-should-know)
+
+## 工具
+
+### git
+- [Pro Git](https://git-scm.com/book/en/v2) 如果要了解一个版本管理工具的话, git是首选.
+- [Git代码行统计命令集](https://blog.csdn.net/dwarven/article/details/46550117)
 
 ## 软技能
 ### 面试技巧
