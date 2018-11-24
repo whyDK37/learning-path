@@ -11,3 +11,4 @@ algorithms/\.*
 algorithms/bin/*
 go/\.*
 .project
+algorithms/python/.idea/
