@@ -13,7 +13,8 @@
     - [The Secret To 10 Million Concurrent Connections -The Kernel Is The Problem, Not The Solution](http://highscalability.com/blog/2013/5/13/the-secret-to-10-million-concurrent-connections-the-kernel-i.html)
 ## Linux 系统
 
-### 文章
+### 文章/博客
+- [Learn Linux, 101: System logging](https://developer.ibm.com/tutorials/l-lpic1-108-2/)
 - [How to use IP Command in Linux with Examples](https://linoxide.com/linux-command/use-ip-command-linux/)
 ## 编程语言
 ### [Haskell](https://www.haskell.org/)
