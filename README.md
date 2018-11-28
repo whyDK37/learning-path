@@ -32,7 +32,7 @@
   - [JAVA 2核心技术 卷Ⅰ](https://book.douban.com/subject/1781451/)
   - [Effective java](https://book.douban.com/subject/3360807/)
 - 底层知识
-  - Java Memory Model
+  - Java Memory Model(JMM)
     - [JSR 133 (Java Memory Model) FAQ](https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html)
 #### 其他资料
 - [awesome-java](https://github.com/akullpp/awesome-java) - A curated list of awesome Java frameworks, libraries and software.
