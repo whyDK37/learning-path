@@ -13,6 +13,9 @@
     - [The Secret To 10 Million Concurrent Connections -The Kernel Is The Problem, Not The Solution](http://highscalability.com/blog/2013/5/13/the-secret-to-10-million-concurrent-connections-the-kernel-i.html)
 ## Linux 系统
 
+### 命令/工具
+- sed  https://www.geeksforgeeks.org/sed-command-in-unix/
+
 ### 文章/博客
 - [Learn Linux, 101: System logging](https://developer.ibm.com/tutorials/l-lpic1-108-2/)
 - [How to use IP Command in Linux with Examples](https://linoxide.com/linux-command/use-ip-command-linux/)
@@ -29,7 +32,8 @@
   - [JAVA 2核心技术 卷Ⅰ](https://book.douban.com/subject/1781451/)
   - [Effective java](https://book.douban.com/subject/3360807/)
 - 底层知识
-
+  - Java Memory Model
+    - [JSR 133 (Java Memory Model) FAQ](https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html)
 #### 其他资料
 - [awesome-java](https://github.com/akullpp/awesome-java) - A curated list of awesome Java frameworks, libraries and software.
 - [Regular Expression Matching Can Be Simple And Fast (but is slow in Java, Perl, PHP, Python, Ruby, ...)](https://swtch.com/~rsc/regexp/regexp1.html) - This is a tale of two approaches to regular expression matching. One of them is in widespread use in the standard interpreters for many languages, including Perl. The other is used only in a few places, notably most implementations of awk and grep. The two approaches have wildly different performance characteristics:
