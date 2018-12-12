@@ -46,13 +46,16 @@
 - [Go语言高级进阶篇](https://blog.csdn.net/column/details/gosenior.html)
 
 ## 编程模型/范式
-### I/O模型
 
-#### 阻塞I/O
-#### 非阻塞I/O
-#### I/O 的多路复用( select 和 poll )
-#### 信号驱动的 I/O (SIGIO)
-#### 异步 I/O ( POSIX 的 aio_functions)
+### I/O模型
+  I/O模型可以分为以下几类:
+- 阻塞I/O
+- 非阻塞I/O
+- I/O 的多路复用( select 和 poll )
+- 信号驱动的 I/O (SIGIO)
+- 异步 I/O ( POSIX 的 aio_functions)
+
+- [Java I/O 模型的演进](https://waylau.com/java-io-model-evolution/)
 - [Boost application performance using asynchronous I/O](https://www.ibm.com/developerworks/library/l-async/) ibm Boost application performance using asynchronous I/O
 
 ### Lock-Free 编程
