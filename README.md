@@ -31,6 +31,8 @@
   - [java 编程思想](https://book.douban.com/subject/2130190/)
   - [JAVA 2核心技术 卷Ⅰ](https://book.douban.com/subject/1781451/)
   - [Effective java](https://book.douban.com/subject/3360807/)
+- 标准
+  - [Java Community Process](https://jcp.org/en/home/index) Java 标准（jsr）网站
 - 底层知识
   - Java Memory Model(JMM)
     - [JSR 133 (Java Memory Model) FAQ](https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html)
