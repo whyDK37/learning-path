@@ -130,6 +130,7 @@
 
 ## 分布式系统
 
+- [opentracing](https://opentracing.io/specification/) 分布式追踪语义规范，介绍了非语言相关的最终定义数据模型和机制。蚂蚁金服基于此标准实现了[分布式链路追踪中间件 SOFATracer SOFATracer](https://www.oschina.net/p/sofatracer)
 ## 软件设计
 - 原则
   - [Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
