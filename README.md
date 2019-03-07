@@ -19,12 +19,12 @@
 ### 文章/博客
 - [Learn Linux, 101: System logging](https://developer.ibm.com/tutorials/l-lpic1-108-2/)
 - [How to use IP Command in Linux with Examples](https://linoxide.com/linux-command/use-ip-command-linux/)
+
 ## 编程语言
 ### [Haskell](https://www.haskell.org/)
 一种函数式编程语言, 如果对学习新的语言或者函数式编程, 递归编程感兴趣, 可以研究一下.
 
 ### Java
-
 学习 Java 语言有以下入门级的书（注意：下面一些书在入门篇中有所提及，但为了完整性，还是要在这里提一下，因为可能有朋友是跳着看的）。
 
 - 基础
@@ -67,7 +67,7 @@
 
 ### 编程范式
 - [Programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) wiki
-- [Programming paradigm](http://cs.lmu.edu/~ray/notes/paradigms/)
+- [Programming paradigm](http://cs.lmu.edu/~ray/notes/paradigms/) A programming paradigm is a style, or “way,” of programming.
 - [Six programming paradigms that will change how you think about coding](https://www.ybrikman.com/writing/2014/04/09/six-programming-paradigms-that-will/) [中文翻译](https://my.oschina.net/editorial-story/blog/890965)
 - [Programming Paradigms for Dummies: What Every Programmer Should Know](https://www.info.ucl.ac.be/~pvr/VanRoyChapter.pdf)
 - [Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html)
@@ -78,7 +78,7 @@
 - [数据结构动画网站](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) - 以动画的方式展示数据结构, 非常直观.
 
 ## Algorithm 算法
-- 基础知识
+### 基础知识
   - [图解算法](https://book.douban.com/subject/26979890/) - 比较生动的一本算法书
     - 练习题
       - 6.3 拓扑排序 Topological Sorting, 请问下面的三个列表哪些可行、哪些不可行？
@@ -87,7 +87,7 @@
   - [编程珠玑](https://book.douban.com/subject/26302533/) -
   - [算法导论](https://book.douban.com/subject/1885170/) - 不太好肯的一本书, 详细介绍了算法的推导过程, 需要些数学功底.
 
-- 算法设计思想
+### 算法设计思想
   - divide and conquer，D&C 分而治之
   - 动态规划 Dynamic programming(hard to learn)
   - 回溯 back tracing
@@ -120,7 +120,7 @@
 - [leetcode](https://leetcode.com/) - 一个算法在线练习网站
   - [陈浩的 leetcode](https://github.com/haoel/leetcode)
 
-- 论文
+### 论文
   - [Algorithm = Logic + Control](https://www.doc.ic.ac.uk/~rak/papers/algorithm%20=%20logic%20+%20control.pdf) - 算法是逻辑+控制
   - [Algorithms and Data Structures ](http://www.ethoberon.ethz.ch/WirthPubl/AD.pdf) - 算法和数据结构. 综合这两篇论文, 可以得到公式: 程序=数据结构+逻辑+控制  
 ## 数据库
@@ -129,8 +129,11 @@
   - [High Performance MySQL, 3rd Edition](https://book.douban.com/subject/10443458/)
 
 ## 分布式系统
-
+### 理论
+- [CAP定理](https://zh.wikipedia.org/wiki/CAP%E5%AE%9A%E7%90%86)  掘进上的[分布式理论(一) - CAP定理](https://juejin.im/post/5b26634b6fb9a00e765e75d1)
+### 规范
 - [opentracing](https://opentracing.io/specification/) 分布式追踪语义规范，介绍了非语言相关的最终定义数据模型和机制。蚂蚁金服基于此标准实现了[分布式链路追踪中间件 SOFATracer SOFATracer](https://www.oschina.net/p/sofatracer)
+
 ## 软件设计
 - 原则
   - [Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
