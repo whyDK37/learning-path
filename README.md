@@ -21,8 +21,6 @@
 - [How to use IP Command in Linux with Examples](https://linoxide.com/linux-command/use-ip-command-linux/)
 
 ## 编程语言
-### [Haskell](https://www.haskell.org/)
-一种函数式编程语言, 如果对学习新的语言或者函数式编程, 递归编程感兴趣, 可以研究一下.
 
 ### Java
 学习 Java 语言有以下入门级的书（注意：下面一些书在入门篇中有所提及，但为了完整性，还是要在这里提一下，因为可能有朋友是跳着看的）。
@@ -37,7 +35,17 @@
   - Java Memory Model(JMM)
     - [JSR 133 (Java Memory Model) FAQ](https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html)
   - [Understanding Java JIT Compilation with JITWatch, Part 1](https://www.oracle.com/technetwork/articles/java/architect-evans-pt1-2266278.html)
-  
+  - 字节码技术
+
+#### 锁
+ - [CAS] 是java无锁编程的核心机制，底层依赖cpu指令实现比较和替换。 [不可不说的Java“锁”事](https://segmentfault.com/a/1190000017037430)
+
+#### JVM
+- [Inside the Java Virtual Machine](https://www.artima.com/insidejvm/ed2/index.html) 讲解JVM内部机制的系列文章。I'll be posting chapters of Inside the Java 2 Virtual Machine in the coming weeks and months.
+
+#### 框架工具
+- [btraceio/btrace](https://github.com/btraceio/btrace) BTrace - a safe, dynamic tracing tool for the Java platform.[Java动态追踪技术探究](https://segmentfault.com/a/1190000018350746#articleHeader3)
+
 #### 其他资料
 - [awesome-java](https://github.com/akullpp/awesome-java) - A curated list of awesome Java frameworks, libraries and software.
 - [Regular Expression Matching Can Be Simple And Fast (but is slow in Java, Perl, PHP, Python, Ruby, ...)](https://swtch.com/~rsc/regexp/regexp1.html) - This is a tale of two approaches to regular expression matching. One of them is in widespread use in the standard interpreters for many languages, including Perl. The other is used only in a few places, notably most implementations of awk and grep. The two approaches have wildly different performance characteristics:
@@ -48,6 +56,11 @@
   - [go users](https://github.com/golang/go/wiki/GoUsers)
 - [Go in Action](https://book.douban.com/subject/25858023/)
 - [Go语言高级进阶篇](https://blog.csdn.net/column/details/gosenior.html)
+
+
+### [Haskell](https://www.haskell.org/)
+一种函数式编程语言, 如果对学习新的语言或者函数式编程, 递归编程感兴趣, 可以研究一下.
+
 
 ## 编程模型/范式
 
