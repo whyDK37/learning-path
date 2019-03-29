@@ -143,7 +143,8 @@
 
 ## 分布式系统
 ### 理论
-- [CAP定理](https://zh.wikipedia.org/wiki/CAP%E5%AE%9A%E7%90%86)  掘进上的[分布式理论(一) - CAP定理](https://juejin.im/post/5b26634b6fb9a00e765e75d1)
+- [CAP定理](https://zh.wikipedia.org/wiki/CAP%E5%AE%9A%E7%90%86)  掘金上的[分布式理论(一) - CAP定理](https://juejin.im/post/5b26634b6fb9a00e765e75d1)
+- [An introduction to distributed systems](https://github.com/aphyr/distsys-class) 一个人总结的分布式系统涉及到的内容。
 ### 规范
 - [opentracing](https://opentracing.io/specification/) 分布式追踪语义规范，介绍了非语言相关的最终定义数据模型和机制。蚂蚁金服基于此标准实现了[分布式链路追踪中间件 SOFATracer SOFATracer](https://www.oschina.net/p/sofatracer)
 
