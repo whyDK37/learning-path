@@ -2,15 +2,19 @@
 > 学习记录
 
 # 基础知识
-- 系统
+## 系统
   - [《深入理解计算机系统》，《Computer System A programmer`s prespective](https://book.douban.com/subject/26912767/) - 程序员需要了解的计算机知识. 描述了计算机系统的实现细节, 帮助在大脑中构建一个层次型的计算机. 这是程序员必读的一本书.
 
-- 网络
+## TCP/IP
   - [TCP 的那些事儿（上）](https://coolshell.cn/articles/11564.html)
   - [TCP 的那些事儿（下）](https://coolshell.cn/articles/11609.html) 状态机, 拥塞控制中心, windows 滑动窗口
   - [图解TCP/IP](https://book.douban.com/subject/24737674/) - 快速入门书籍
   - [C10K 问题](http://www.kegel.com/c10k.html)
     - [The Secret To 10 Million Concurrent Connections -The Kernel Is The Problem, Not The Solution](http://highscalability.com/blog/2013/5/13/the-secret-to-10-million-concurrent-connections-the-kernel-i.html)
+  
+### 案例分析
+- [记一次由tcp_tw_recycle参数引发的血案](https://blog.51cto.com/hld1992/2285410) 
+
 # Linux 系统
 
 ## 命令/工具
@@ -255,6 +259,7 @@
 - 书籍
   - [High Performance MySQL, 3rd Edition](https://book.douban.com/subject/10443458/)
 
+## Elasticsearch
 
 
 
