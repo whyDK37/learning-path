@@ -14,14 +14,15 @@ spi是什么机制
 
 ## zk
 使用场景
-脑裂
-羊群效应
+### 脑裂
+### 羊群效应
 集群选主只监听比自己序号小的节点
 
 ## spring cloud
 https://spring.io/projects/spring-cloud
 
 ## Kafka
+
 
 ## Rockermq
 
