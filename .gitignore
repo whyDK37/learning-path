@@ -1,14 +1,31 @@
-# Created by .ignore support plugin (hsz.mobi)
-/.idea/
-.gradle/
-algorithms/algorithms.iml
-algorithms/out/
-algorithms/target/
-learning-path.iml
-venv/
-.settings/
-algorithms/\.*
-algorithms/bin/*
-go/\.*
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
 .project
-algorithms/python/.idea/
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
