@@ -13,4 +13,6 @@
 ## 读数据原理
 
 # 参考
+- [Kafka+Replication](https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Replication)
+- [一文看懂Kafka消息格式的演变](https://blog.csdn.net/u013256816/article/details/80300225)
 - [http://kafka.apache.org/](http://kafka.apache.org/)
