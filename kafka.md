@@ -26,12 +26,35 @@
 
 ## 读数据原理
 
+# 集群配置参数
+## kafka 内核参数(51)
+- broker.id ：唯一 id
+- log.dirs ： kafka 保存数据的路径， 可配置多个
+- zookeeper.connect : zk 链接地址，不用多说了
+- listeners ： 监听端口。
+- unclean.leader.election.enable ： 制选举 ISR 列表里的 follower 为 leader。
+- delete.topic.enable ： 允许删除 topic
+- log.retention.hours ： kafka 消息保存的你小时，默认 168， 也就是 7 天。
+- log.retention.bytes： 不常用， 默认 -1
+- **min.insync.replicas**；集群一般都是双副本，为了保证数据不丢失，可设置为2， 如果允许不分丢失可设置为1， 提高吞吐量. acks=-1, 让 ISR 列表里的副本都同步。
+- num.io.threads： 写盘线程，可适当调大。
+- num.network.threads： 接受请求线程， 可适当调大。
+- message.max.bytes ： 可适当调打，防止消息过大 kafka 直接拒绝， 增加此参数的同时需要增加消费端参数。参数可以设置到 topic 维度。
+
+## JVM、GC 参数(52)
+- 主要设置堆内存，一般6g以上。
+- gc， 一般用g1， 可以设置最小停顿时间。
+## 操作系统参数(53)
+- ulimit -n 100000, 增加文件描述符
+- 设置刷盘时间： 默认是5秒， 如果设置的大些， 可提高吞吐量。vm.dirty_*
+
 # 参考
+- [http://kafka.apache.org/](http://kafka.apache.org/)
+- [kafka document 官方文档](http://kafka.apache.org/22/documentation.html)
+
 - [Kafka+Replication](https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Replication)
 - [一文看懂Kafka消息格式的演变](https://blog.csdn.net/u013256816/article/details/80300225)
 - [Kafka水位(high watermark)与leader epoch的讨论](https://www.cnblogs.com/huxi2b/p/7453543.html)
-- [http://kafka.apache.org/](http://kafka.apache.org/)
-- [kafka document 官方文档](http://kafka.apache.org/22/documentation.html)
 - [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
 - [How to choose the number of topics/partitions in a Kafka cluster?](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster)
 
