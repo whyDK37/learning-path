@@ -14,6 +14,13 @@ If the throughput and maximum pause time goals have been met, then the garbage c
 
 # jvm 分代
 
+## old 区对象的来源
+- ⼀个对象在年轻代⾥躲过15次垃圾回收，年龄太⼤了，寿终正寝，进⼊⽼年代
+- 对象太⼤了，超过了⼀定的阈值，直接进⼊⽼年代，不⾛年轻代
+- ⼀次Young GC过后存活对象太多了，导致Survivor区域放不下了，这批对象会进⼊⽼年代
+- 可能⼏次Young GC过后，Surviovr区域中的对象占⽤了超过50%的内存，此时会判断如果年龄1+年龄2+年龄N的对象总和超过了
+- Survivor区域的50%，此时年龄N以及之上的对象都进⼊⽼年代，这是动态年龄判定规则
+
 # gc 触发时机
 
 ##　minor gc
