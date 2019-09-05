@@ -36,7 +36,7 @@
 - delete.topic.enable ： 允许删除 topic
 - log.retention.hours ： kafka 消息保存的你小时，默认 168， 也就是 7 天。
 - log.retention.bytes： 不常用， 默认 -1
-- **min.insync.replicas**；集群一般都是双副本，为了保证数据不丢失，可设置为2， 如果允许不分丢失可设置为1， 提高吞吐量. acks=-1, 让 ISR 列表里的副本都同步。
+- **min.insync.replicas**；重要！集群一般都是双副本，为了保证数据不丢失，可设置为2， 如果允许不分丢失可设置为1， 提高吞吐量. acks=-1, 让 ISR 列表里的副本都同步。
 - num.io.threads： 写盘线程，可适当调大。
 - num.network.threads： 接受请求线程， 可适当调大。
 - message.max.bytes ： 可适当调打，防止消息过大 kafka 直接拒绝， 增加此参数的同时需要增加消费端参数。参数可以设置到 topic 维度。
@@ -44,6 +44,7 @@
 ## JVM、GC 参数(52)
 - 主要设置堆内存，一般6g以上。
 - gc， 一般用g1， 可以设置最小停顿时间。
+- jmx 需要开启： JMX_PORT=9997
 ## 操作系统参数(53)
 - ulimit -n 100000, 增加文件描述符
 - 设置刷盘时间： 默认是5秒， 如果设置的大些， 可提高吞吐量。vm.dirty_*
