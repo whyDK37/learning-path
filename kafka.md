@@ -49,6 +49,12 @@
 - ulimit -n 100000, 增加文件描述符
 - 设置刷盘时间： 默认是5秒， 如果设置的大些， 可提高吞吐量。vm.dirty_*
 
+## 核心监控指标
+首先打开 JMX 监控端口，然后才能监控 broker 的指标。
+- 机器层面， cpu，内存， 网络，磁盘
+- jvm层面，gc
+- kafka，异常日志，链接空闲，ISR刷新，kafka JMX 的一些监控指标。
+
 # 参考
 - [http://kafka.apache.org/](http://kafka.apache.org/)
 - [kafka document 官方文档](http://kafka.apache.org/22/documentation.html)
