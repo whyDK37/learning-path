@@ -94,12 +94,13 @@
 - [kafka document 官方文档](http://kafka.apache.org/22/documentation.html)
 
 - [Kafka+Replication](https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Replication)
-- [一文看懂Kafka消息格式的演变](https://blog.csdn.net/u013256816/article/details/80300225)
-- [Kafka水位(high watermark)与leader epoch的讨论](https://www.cnblogs.com/huxi2b/p/7453543.html)
 - [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
 - [How to choose the number of topics/partitions in a Kafka cluster?](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster)
 
 - [How to Support More Queues in RocketMQ?](http://rocketmq.apache.org/rocketmq/how-to-support-more-queues-in-rocketmq/) 对比分析了RocketMq和kafka，解释为什么要写RocketMq。由于Kafka是分partition的，所以写入是分散的，很难利用Linux IO Group Commit 机制
-
+### 细节是魔鬼
+- [一文看懂Kafka消息格式的演变](https://blog.csdn.net/u013256816/article/details/80300225)
 - [为了追求极致的性能，Kafka掌控这11项要领](https://blog.csdn.net/u013256816/article/details/93772377) 。从11个点描述kafka的设计细节，包括日志格式，批处理，消息压缩，客户端优化，分区，顺序写盘，页缓存（不清楚这一点的代码实现逻辑，如何匹配OS的缓存机制呢？）等。
+- [Kafka水位(high watermark)与leader epoch的讨论](https://www.cnblogs.com/huxi2b/p/7453543.html)
 - [Linux IO磁盘篇整理小记](https://blog.csdn.net/u013256816/article/details/78945085) 
+- [TimingWheel 时间轮详解](https://www.jianshu.com/p/0f0fec47a0ad)
