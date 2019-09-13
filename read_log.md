@@ -39,6 +39,9 @@
   - 23，24， 分区，采用了google的 Murmurhash 算法计算可以的hash值。
   - 026_大致浏览一下源码中将消息写入内存缓冲的运行流程。很重要的流程。
   org/apache/kafka/clients/producer/KafkaProducer.java:791
+- 2019-9-13 30-36
+
+
 ## 05_大数据架构师能力模型、职业规划以及年薪展望
 
 ## 06_大型电商数据化运营平台项目需求分析
