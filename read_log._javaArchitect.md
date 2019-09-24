@@ -41,8 +41,12 @@
   - 86 unlock 时是如何唤醒等待线程的。
   - 87 读写锁是怎么玩的。
   - 88 利用stats的高低16位表示读写锁。读写锁共用一个 Sync 对象。
-  
-  
+- 2019-9-24 90-95
+  - 91 读锁的实现
+       java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock.lock
+       java.util.concurrent.locks.ReentrantReadWriteLock.Sync.tryAcquireShared
+  - 98_基于AQS实现的Condition阻塞过程源码分析。 condition 有单独的等待队列，当调用condition.await时，把自己加入到等待队列，并释放锁。
+  - 99 signal 的过程就是把condition 等待队列的元素，转化到加锁等待队列。当其他线程
   
 # 09_讲给Java工程师听的大白话网络课程
 
