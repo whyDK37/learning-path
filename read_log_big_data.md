@@ -40,3 +40,31 @@
 
 ## 07_每日TB量级的数据采集平台架构实战
  canal
+ 
+## 08_ZooKeeper顶尖高手课程：从实战到源码
+- 2019-10-23 21-
+  - 34 为运维人员提供的运维工具 
+  - 36 开启 JMX ，修改启动脚本中的 ZOMAIN，可连接远程zk。
+  
+  - 一般使用3.4.5版本。 
+  - 机器配置， 最好是8c/16g，打内存最好用G1，设置期望停顿时间, gc日志和崩溃dump都要配置，在业务高峰期需要观察gc情况，如果有问题需要及时更新。最好接入监控系统。
+  - 内存数据快照，定期些快照
+  - 集群配置，2888：3888， 3888是集群选举使用的端口，2888是客户端和集群间同步数据使用的。
+  - 提供读 qps，增加 observer 节点 
+  
+  核心参数（官网有参数说明）：
+  - tickTime，基本时间单位，
+  - dataDir
+  - dataLogDIr
+  - initLimit 
+  - syncLimit leader 和 flower 的同步时间
+  - snapCount 10w个事务写快照，一般不需要修改
+  - maxClientCnxns ： 相同的客户端ip默认60个链接。也是为了防止DDOS攻击。一个应用server最好只启动一个客户端链接zk，
+  - jute.maxbuffer ： 一个znode最多存储1mb数据，一般zk存储的数据都是配置信息，不要太大。
+  - autopurge.snapRetainCount,autopurge.purgeInterval 开启定时清理快照文件和事务文件，默认不开启。
+  - forceSync： commit时，强制刷新数据到磁盘，最好开启
+  leader 相关
+  - leaderServes： 配置laeder是否接受客户端链接
+  - cnxTimeout ： 选举超市时间， 默认 5s
+  
+### 运维工具与使用  
