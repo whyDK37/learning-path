@@ -39,10 +39,25 @@
 ## 06_大型电商数据化运营平台项目需求分析
 
 ## 07_每日TB量级的数据采集平台架构实战
- canal
- 
+> 关键词：canal
+- 2019-10-23 71-80
+  - 76 parse 伪装成 MySQL slave 拉取数据。初始化parse，dbsync负责具体的解析 binlog。
+  - 高可用需要满足两点
+    - 1 canal 本身的高可用，元数据都存储在zk
+    - 2 kafka 挂掉，canal暂时把文件写入到磁盘，等kafka 恢复再继续些kafka 
+
+### canal
+- server
+- instance 
+- parse binlog 解析模块
+- sink 数据加工处理模块
+- store 数据存储模块
+- meta 元数据维护模块
+- canal protocol ： canal 客户端订阅 
+
 ## 08_ZooKeeper顶尖高手课程：从实战到源码
-- 2019-10-23 21-
+- 2019-10-23 21-37
+
   - 34 为运维人员提供的运维工具 
   - 36 开启 JMX ，修改启动脚本中的 ZOMAIN，可连接远程zk。
   
@@ -52,7 +67,7 @@
   - 集群配置，2888：3888， 3888是集群选举使用的端口，2888是客户端和集群间同步数据使用的。
   - 提供读 qps，增加 observer 节点 
   
-  核心参数（官网有参数说明）：
+核心参数（[官网有参数说明](http://zookeeper.apache.org/doc/r3.5.6/zookeeperAdmin.html)）：
   - tickTime，基本时间单位，
   - dataDir
   - dataLogDIr
