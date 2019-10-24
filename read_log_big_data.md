@@ -39,13 +39,18 @@
 ## 06_大型电商数据化运营平台项目需求分析
 
 ## 07_每日TB量级的数据采集平台架构实战
-> 关键词：canal
+> 关键词：canal, flume, openFalcon, kafka, HDFS
 - 2019-10-23 71-80
-  - 76 parse 伪装成 MySQL slave 拉取数据。初始化parse，dbsync负责具体的解析 binlog。
+  - 76 canal parse 伪装成 MySQL slave 拉取数据。初始化parse，dbsync负责具体的解析 binlog。
   - 高可用需要满足两点
     - 1 canal 本身的高可用，元数据都存储在zk
     - 2 kafka 挂掉，canal暂时把文件写入到磁盘，等kafka 恢复再继续些kafka 
-
+- 2019-10-24 1-18
+  - 7 **OpenFalcon** 监控 flume 和 canal 
+  - 12 MySQL binlog 同一条记录可能存在多个记录，增删改，当这部分数据导入到HDFS之后，每天需要用 spark 对数据进行清洗，最后处理后的数据才是最终的数据。
+  - 13 canal 如何支持分库分表。需要把分散的表聚合成一张逻辑表，这需要二次开发。 
+  - 19 flume 核心原理，读官方文档。
+  
 ### canal
 - server
 - instance 
@@ -56,6 +61,7 @@
 - canal protocol ： canal 客户端订阅 
 
 ## 08_ZooKeeper顶尖高手课程：从实战到源码
+> 关键词： zookeeper
 - 2019-10-23 21-37
 
   - 34 为运维人员提供的运维工具 
