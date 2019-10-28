@@ -72,18 +72,26 @@
 
 ## 08_ZooKeeper顶尖高手课程：从实战到源码
 > 关键词： zookeeper
-- 2019-10-23 21-37
+>  netflix, 雅虎， linkedin, facebook, google, 亚马逊， 这些公司开元的项目质量还是比较高的。
 
-  - 34 为运维人员提供的运维工具 
-  - 36 开启 JMX ，修改启动脚本中的 ZOMAIN，可连接远程zk。
+- 2019-10-23 21-37
+- 2019-10-28 38-57
+  - **34 为运维人员提供的运维工具**
+  - 36 开启 JMX ，修改启动脚本中的 ZOMAIN，可连接远程zk。 
   
   - 一般使用3.4.5版本。 
   - 机器配置， 最好是8c/16g，打内存最好用G1，设置期望停顿时间, gc日志和崩溃dump都要配置，在业务高峰期需要观察gc情况，如果有问题需要及时更新。最好接入监控系统。
   - 内存数据快照，定期些快照
   - 集群配置，2888：3888， 3888是集群选举使用的端口，2888是客户端和集群间同步数据使用的。
-  - 提供读 qps，增加 observer 节点 
-  
-核心参数（[官网有参数说明](http://zookeeper.apache.org/doc/r3.5.6/zookeeperAdmin.html)）：
+  - 提高读 qps，增加 observer 节点 
+  - curator 是最好用的客户端包。
+    - leader
+    - barrier
+    - counter. 实际上用 redis 更好，吞吐量更高
+    - 子节点监听，pathCache, nodeCache, treeCache。这个功能很重要，协调通知全靠他。
+    
+    
+  核心参数（[官网有参数说明](http://zookeeper.apache.org/doc/r3.5.6/zookeeperAdmin.html)）：
   - tickTime，基本时间单位，
   - dataDir
   - dataLogDIr
