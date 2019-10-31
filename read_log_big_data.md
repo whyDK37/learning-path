@@ -42,12 +42,16 @@
 > 关键词：canal, flume, openFalcon, Prometheus, Grafana, kafka, HDFS
 - 2019-10-24 1-50
 - 2019-10-23 71-80
-- 2019-10-30 54-63
+- 2019-10-30 54-65
    
   - 54 一般hadoop都是用cdh版本。
   - 55 源码结构：node 是程序入口。 
     - source 开启事务提交event到channel
+    - MemoryChannel ， 只要一个事务提交，就会把数据提交到全局的队列中
     - FileChannel 工作原理，**看源码事务是如何实现的**，commit写入一个commit对象，强制fsync，清空内存，维护写入参数。rollback，写入一个rollback对象，并不是删除文件内容。每次写入的event都会有关联的transactionId，如果没有这个Id commit或者rollback，估计也会认为这个事务没有提交。
+    - SpillableMemoryChannel  官方不建议在生产环境使用，只能在实验环境。所以如果要在生产环境使用，需要自己开发。
+    - KafkaSink 如果提交事务之前有异常，可能会向kafka中提交重复的数据。
+    
   - 76 canal parse 伪装成 MySQL slave 拉取数据。初始化parse，dbsync负责具体的解析 binlog。
   - 高可用需要满足两点
     - 1 canal 本身的高可用，元数据都存储在zk
