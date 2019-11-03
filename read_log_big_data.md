@@ -86,6 +86,8 @@
 
 - 2019-10-23 21-37
 - 2019-10-28 38-57
+- 2019-11-3  58-67
+
   - **34 为运维人员提供的运维工具**
   - 36 开启 JMX ，修改启动脚本中的 ZOMAIN，可连接远程zk。 
   
@@ -94,12 +96,14 @@
   - 内存数据快照，定期些快照
   - 集群配置，2888：3888， 3888是集群选举使用的端口，2888是客户端和集群间同步数据使用的。
   - 提高读 qps，增加 observer 节点 
-  - curator 是最好用的客户端包。
+  - curator 是最好用的客户端包。是对原生客户端的封装，使用更方便。
     - leader
     - barrier
     - counter. 实际上用 redis 更好，吞吐量更高
     - 子节点监听，pathCache, nodeCache, treeCache。这个功能很重要，协调通知全靠他。
-    
+      - pathCache, zk原生的监听在使用一次后会失效，需要重新注册，但是curator会重新注册监听，会继续收到实践。只能监听一级child的增删改，孙子节点的变化不会收到通知。
+      - nodeCache
+      - treeCache
     
   核心参数（[官网有参数说明](http://zookeeper.apache.org/doc/r3.5.6/zookeeperAdmin.html)）：
   - tickTime，基本时间单位，
