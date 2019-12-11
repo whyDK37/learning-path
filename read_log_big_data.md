@@ -90,54 +90,57 @@
 - 2019-11-4  68-75
 - 2019-11-13 76-90
 - 2019-11-15 91-100
-- 2019-11-18 101-115  
+- 2019-11-18 101-159
+- 2019-12-11 160-179
 
-  zookeeper 源码的阅读（101-）
-  - 阅读中间件源码如果打断点，可能破坏程序执行的逻辑，导致程序运行错误。一般通过静态代码阅读的方式学习。
-  - 第一步，通过阅读启动脚本，了解启动类和参数，从启动类阅读程序的入口。
-  - zookeeper 启动类是 QuorumPeerMain, quorum 是大多数、大部分的意思；peer 是平等的意思，集群中每个节点都是平等的。
-  - zk 支持几种选举算法，0，1，2都废弃了，目前推荐3。
-  - zk 是如何避免双方重复建立 socket 链接的呢，只有sid大的机器向sid小的机器发起建立连接，反过来是会被关闭连接的。
-  - 但是！可以在connectAll方法里只建立比自己id小的连接，不用建立连接后再断开。
+- 客户端发送请求， 都会封装成package，发送给cxn组件，该组件负责发送和接收消息。
+- 服务端有请求处理链条，（不同的角色处理链条不同）接收到请求，放到outStandingChanges队列中，等待处理。
+- ProposalRequestProcessor, 把请求从队列中取出，第一步写入本地事务日志，进行2pc同步，等待过半的请求返回ack，最后执行commitProcessor
+- Follower 在收到消息之后 processPacket(QuorumPackage qp) 处理 PROPOSAL 类型的消息。写事务日志，然后调用 SyncRequestProcessor
+  - 会尽快把请求写入日志，两个触发条件，1，处理完请求，2，1000条写一次。
+- 写完日志，调用SendAckProcessor(责任链模式)，
+- 每个请求都有一个ack集合， 如果过半， 触发 CommitProcessor. 发送commit请求，
+- 调用Sync() 实现强一致性。会给所有的follower发送sync，同步等待ack，然后返回给客户端。
+- 当写入的日志数量达到配置数量时，开启一个新的日志文件，并启动一个线程写一个数据快照。
+-     
+
+- **34 为运维人员提供的运维工具**
+- 36 开启 JMX ，修改启动脚本中的 ZOMAIN，可连接远程zk。 
+  
+- 一般使用3.4.5版本。 
+- zk 核心功能CRUD+节点类型+ 监听+回调，给予核心功能可以封装成很多高阶的功能，如选举，分布式锁等。
+- 机器配置， 最好是8c/16g，打内存最好用G1，设置期望停顿时间, gc日志和崩溃dump都要配置，在业务高峰期需要观察gc情况，如果有问题需要及时更新。最好接入监控系统。
+- 内存数据快照，定期些快照
+- 集群配置，2888：3888， 3888是集群选举使用的端口，2888是客户端和集群间同步数据使用的。
+- 提高读 qps，增加 observer 节点 
+- curator 是最好用的客户端包。是对原生客户端的封装，使用更方便。
+- 看源码，可以彻底弄明白客户端一般怎么玩，可以看懂通过zk原生api封装高阶api，可以看懂开源框架如何使用zk的，明白他的封装逻辑。
+- leader
+- barrier
+- doubleBarrier
+- counter. 实际上用 redis 更好，吞吐量更高
+- 子节点监听，pathCache, nodeCache, treeCache。这个功能很重要，协调通知全靠他。
+  - pathCache, zk原生的监听在使用一次后会失效，需要重新注册，但是curator会重新注册监听，会继续收到实践。只能监听一级child的增删改，孙子节点的变化不会收到通知。
+  - nodeCache
+  - treeCache
+- 读写锁。在一个目录创建read,write前缀的临时节点，根据不同的方式判断是否获取到了锁，如果没有获取到，则监听前面的某个节点。
+  - 羊群效应优化。问题：w,r,r,w,r,r，这样的锁有羊群效应。所有的r锁都监听了第一个w锁。但是实际上r锁应该距离自己最近的w锁，只有这个锁释放了自己才能获取到r锁。
   
 
-  - **34 为运维人员提供的运维工具**
-  - 36 开启 JMX ，修改启动脚本中的 ZOMAIN，可连接远程zk。 
-  
-  - 一般使用3.4.5版本。 
-  - zk 核心功能CRUD+节点类型+ 监听+回调，给予核心功能可以封装成很多高阶的功能，如选举，分布式锁等。
-  - 机器配置， 最好是8c/16g，打内存最好用G1，设置期望停顿时间, gc日志和崩溃dump都要配置，在业务高峰期需要观察gc情况，如果有问题需要及时更新。最好接入监控系统。
-  - 内存数据快照，定期些快照
-  - 集群配置，2888：3888， 3888是集群选举使用的端口，2888是客户端和集群间同步数据使用的。
-  - 提高读 qps，增加 observer 节点 
-  - curator 是最好用的客户端包。是对原生客户端的封装，使用更方便。
-    - 看源码，可以彻底弄明白客户端一般怎么玩，可以看懂通过zk原生api封装高阶api，可以看懂开源框架如何使用zk的，明白他的封装逻辑。
-    - leader
-    - barrier
-    - doubleBarrier
-    - counter. 实际上用 redis 更好，吞吐量更高
-    - 子节点监听，pathCache, nodeCache, treeCache。这个功能很重要，协调通知全靠他。
-      - pathCache, zk原生的监听在使用一次后会失效，需要重新注册，但是curator会重新注册监听，会继续收到实践。只能监听一级child的增删改，孙子节点的变化不会收到通知。
-      - nodeCache
-      - treeCache
-    - 读写锁。在一个目录创建read,write前缀的临时节点，根据不同的方式判断是否获取到了锁，如果没有获取到，则监听前面的某个节点。
-      - 羊群效应优化。问题：w,r,r,w,r,r，这样的锁有羊群效应。所有的r锁都监听了第一个w锁。但是实际上r锁应该距离自己最近的w锁，只有这个锁释放了自己才能获取到r锁。
-      
-    
-  核心参数（[官网有参数说明](http://zookeeper.apache.org/doc/r3.5.6/zookeeperAdmin.html)）：
-  - tickTime，基本时间单位，
-  - dataDir
-  - dataLogDIr
-  - initLimit 
-  - syncLimit leader 和 flower 的同步时间
-  - snapCount 10w个事务写快照，一般不需要修改
-  - maxClientCnxns ： 相同的客户端ip默认60个链接。也是为了防止DDOS攻击。一个应用server最好只启动一个客户端链接zk，
-  - jute.maxbuffer ： 一个znode最多存储1mb数据，一般zk存储的数据都是配置信息，不要太大。
-  - autopurge.snapRetainCount,autopurge.purgeInterval 开启定时清理快照文件和事务文件，默认不开启。
-  - forceSync： commit时，强制刷新数据到磁盘，最好开启
-  leader 相关
-  - leaderServes： 配置laeder是否接受客户端链接
-  - cnxTimeout ： 选举超市时间， 默认 5s
+核心参数（[官网有参数说明](http://zookeeper.apache.org/doc/r3.5.6/zookeeperAdmin.html)）：
+- tickTime，基本时间单位，
+- dataDir
+- dataLogDIr
+- initLimit 
+- syncLimit leader 和 flower 的同步时间
+- snapCount 10w个事务写快照，一般不需要修改
+- maxClientCnxns ： 相同的客户端ip默认60个链接。也是为了防止DDOS攻击。一个应用server最好只启动一个客户端链接zk，
+- jute.maxbuffer ： 一个znode最多存储1mb数据，一般zk存储的数据都是配置信息，不要太大。
+- autopurge.snapRetainCount,autopurge.purgeInterval 开启定时清理快照文件和事务文件，默认不开启。
+- forceSync： commit时，强制刷新数据到磁盘，最好开启
+leader 相关
+- leaderServes： 配置laeder是否接受客户端链接
+- cnxTimeout ： 选举超市时间， 默认 5s
   
 ### 运维工具与使用  
 
@@ -149,5 +152,14 @@
 
 ### 源码
 
+zookeeper 源码的阅读（101-）
+- 阅读中间件源码如果打断点，可能破坏程序执行的逻辑，导致程序运行错误。一般通过静态代码阅读的方式学习。
+- 第一步，通过阅读启动脚本，了解启动类和参数，从启动类阅读程序的入口。
+- zookeeper 启动类是 QuorumPeerMain, quorum 是大多数、大部分的意思；peer 是平等的意思，集群中每个节点都是平等的。
+- zk 支持几种选举算法，0，1，2都废弃了，目前推荐3。
+- zk 是如何避免双方重复建立 socket 链接的呢，只有sid大的机器向sid小的机器发起建立连接，反过来是会被关闭连接的。
+- 但是！可以在connectAll方法里只建立比自己id小的连接，不用建立连接后再断开。
+  
 - 按照Id和时间戳，生成每台机器的sessionid， 每次获取后+1.
 - SessionTracker， session 分桶机制，把session的过期时间统一成相同的周期倍数，线程定时检查桶内session是否过期。
+- 
