@@ -7,8 +7,8 @@
 elasticsearch.bat -Ecluster.name=my_cluster -Enode.name=node_1 -Epath.data=D:\tmp\data1 -Ehttp.port=9200
 elasticsearch.bat -Ecluster.name=my_cluster -Enode.name=node_2 -Epath.data=D:\tmp\data2 -Ehttp.port=9201
 
-./bin/elasticsearch -d -p pid0 -Ecluster.name=elasticsearch -Enode.name=node_2 -Epath.data=/export/servers/elasticsearch-7.1.0/logs2 -Ehttp.port=9200
-./bin/elasticsearch -d -p pid1 -Ecluster.name=elasticsearch -Enode.name=node_2 -Epath.data=/export/servers/elasticsearch-7.1.0/logs2 -Ehttp.port=9201
+./bin/elasticsearch -d -p pid0 -Ebootstrap.system_call_filter=false -Enetwork.host=10.207.249.45 -Ediscovery.seed_hosts=10.207.249.45 -Ecluster.name=elasticsearch -Enode.name=node_0 -Epath.data=/export/servers/elasticsearch-7.1.0/logs0 -Ehttp.port=9200
+./bin/elasticsearch -d -p pid1 -Ebootstrap.system_call_filter=false -Enetwork.host=10.207.249.45 -Ediscovery.seed_hosts=10.207.249.45 -Ecluster.name=elasticsearch -Enode.name=node_1 -Epath.data=/export/servers/elasticsearch-7.1.0/logs1 -Ehttp.port=9201
 
 ```
 ## 设置刷新时间
@@ -86,6 +86,12 @@ GET /_cat/indices?v&h=i,tm&s=tm:desc
 - 需要通过 Kibana 导入Sample Data的电商数据。具体参考“2.2节-Kibana的安装与界面快速浏览”
 - 需导入Movie测试数据，具体参考“2.4-Logstash安装与导入数据”
 - match之间的term是or；match phrase的terms之间是and，并且term之间的关系也影响搜索结果，如果想提高搜索结果可以增加slot。
+
+### Term Query, Phrase Query 的区别
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-term-query.html
+https://www.elastic.co/guide/en/elasticsearch/reference/7.5/query-dsl-match-query-phrase.html
+
 
 ## 自定义 mapping
 
