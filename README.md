@@ -68,7 +68,7 @@
 
 | 功能 | # | # | # |  # |# |
 |---| ----- | -------- | ---------- |---------- |---------- |
-|API 网关|Soul|Spring Cloud Gateway|Zuul|
+|API 网关|[Soul](https://dromara.org/zh-cn/docs/soul/soul.html)|[Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)|[Zuul](https://github.com/Netflix/zuul)|
 |服务调用|Dubbo|SOFA RPC|Motan|Ribbon|
 |消息队列|RocketMQ|Kafka|RabbitMQ|ActiveMQ|
 |作业调度|Elastic Job Lite|Elastic Job Cloud|Quartz|XXL-Job|
@@ -88,12 +88,12 @@
 |数据库|MySQL|Redis|MongoDB|TiDB|
 |搜索引擎|Lucene|Elasticsearch|Solr|
 |工具类|RxJava|Guava|
-|自我修养|设计模式|数据结构与算法|性能测试|
 |容器服务|Linux|Docker|Kubernetes|Swarm|
 |开发工具|Git|Maven|Jenkins|IntelliJ IDEA|
 |前端框架|React|Vue|Angular|
 |大数据|HBase|Hive|Spark|Flink|
 |其它语言|Go|Python|
+|自我修养|设计模式|数据结构与算法|性能测试|
 
 ### 锁
  - [CAS] 是java无锁编程的核心机制，底层依赖cpu指令实现比较和替换。 [不可不说的Java“锁”事](https://segmentfault.com/a/1190000017037430)
