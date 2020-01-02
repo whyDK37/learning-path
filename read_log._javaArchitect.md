@@ -70,3 +70,12 @@
 
 
 # 13_基于Netty的高并发基础架构项目实战
+
+## 02_工业级IM即时通讯系统项目实战
+2020-1-2 35-43
+
+- 管理 session，
+  在 gateway 在本地内存维护客户端与 socket 的关系， 
+  dispatcher 把session和 uid 的 gateway 保存起来，为之后发送消息路由做准备。
+  并且在 redis 中维护集中的 session 信息。
+                                                         
