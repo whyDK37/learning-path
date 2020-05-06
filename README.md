@@ -70,7 +70,7 @@
 |---| ----- | -------- | ---------- |---------- |---------- |
 |API 网关|[Soul](https://dromara.org/zh-cn/docs/soul/soul.html)|[Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)|[Zuul](https://github.com/Netflix/zuul)|
 |服务调用|Dubbo|SOFA RPC|Motan|Ribbon|
-|消息队列|RocketMQ|Kafka|RabbitMQ|ActiveMQ|
+|消息队列|RocketMQ|Kafka|RabbitMQ|Pulsar|ActiveMQ|
 |作业调度|Elastic Job Lite|Elastic Job Cloud|Quartz|XXL-Job|
 |注册中心|Eureka|Zookeeper|Nacos|Consul Etcd|
 |配置中心|Apollo|Nacos|Spring Cloud Config|Disconf|
