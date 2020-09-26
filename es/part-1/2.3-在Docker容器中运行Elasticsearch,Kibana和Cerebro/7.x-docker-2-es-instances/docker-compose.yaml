@@ -22,7 +22,7 @@ services:
     networks:
       - es7net
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.1.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.2.0
     container_name: es7_01
     environment:
       - cluster.name=geektime
@@ -42,7 +42,7 @@ services:
     networks:
       - es7net
   elasticsearch2:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.1.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.2.0
     container_name: es7_02
     environment:
       - cluster.name=geektime

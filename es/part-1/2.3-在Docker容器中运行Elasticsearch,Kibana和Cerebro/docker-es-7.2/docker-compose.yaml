@@ -30,7 +30,7 @@ services:
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
       - discovery.seed_hosts=es72_01,es72_02
-      - network.publish_host=elasticsearch
+      - network.publish_host=elasticsearch # 容器内部可见的 hostname，宿主机是看不到的
       - cluster.initial_master_nodes=es72_01,es72_02
     ulimits:
       memlock:
@@ -51,14 +51,14 @@ services:
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
       - discovery.seed_hosts=es72_01,es72_02
-      - network.publish_host=elasticsearch
+      - network.publish_host=elasticsearch2
       - cluster.initial_master_nodes=es72_01,es72_02
     ulimits:
       memlock:
         soft: -1
         hard: -1
     volumes:
-      - es72data2:/usr/share/elasticsearch/data
+      - es72data2:/usr/share/elasticsearch/data2
     networks:
       - es72net
 

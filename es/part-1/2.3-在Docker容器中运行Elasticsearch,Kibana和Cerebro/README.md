@@ -31,6 +31,24 @@ $docker kill Name/ID
 $docker restart name/ID
 
 ```
+
+如果启动是es启动失败，报: max virtual memory areas vm.max_map_count [65530] is too low, increase to at least 异常，
+使用下面的命令登录机器
+docker exec -it es72_01 /bin/bash 
+运行
+执行命令：
+sysctl -w vm.max_map_count=262144
+查看结果：
+sysctl -a|grep vm.max_map_count
+显示：
+vm.max_map_count = 262144
+
+上述方法修改之后，如果重启虚拟机将失效，所以：
+解决办法：
+在   /etc/sysctl.conf文件最后添加一行
+vm.max_map_count=262144
+即可永久修改
+
 ## 相关阅读
 - 安装docker  https://www.docker.com/products/docker-desktop
 - 安装 docker-compose https://docs.docker.com/compose/install/
