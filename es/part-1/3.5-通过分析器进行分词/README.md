@@ -10,8 +10,9 @@
 #Language – 提供了30多种常见语言的分词器
 #2 running Quick brown-foxes leap over lazy dogs in the summer evening
 
-#查看不同的analyzer的效果
-#standard
+# 查看不同的analyzer的效果
+# standard
+
 GET _analyze
 {
   "analyzer": "standard",
@@ -82,6 +83,9 @@ POST _analyze
   "analyzer": "icu_analyzer",
   "text": "这个苹果不大好吃"
 }
+
+查询某个 document 的某个列的分词结果。
+GET /lp_base_comb/base_comb/_3248/_termvectors?fields=name
 
 ```
 
