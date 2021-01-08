@@ -25,29 +25,6 @@
 - [How to use IP Command in Linux with Examples](https://linoxide.com/linux-command/use-ip-command-linux/)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 编程语言
 
 ## Java
@@ -78,7 +55,7 @@
 |服务保障|Hystrix|Sentinel|Resilience4j|
 |服务器|Netty|Tomcat|Jetty|Nginx|
 |Java|JDK 源码|Java 并发|JVM 虚拟机|Java 面试题|
-|Cache|Caffeine|
+|Cache|Caffeine|guava|
 |J2EE|Spring|Spring Boot|Spring Cloud|
 |Web 框架|Spring MVC|Spring Security|Spring Webflux|Shiro|
 |ORM 框架|MyBatis|Hibernate|Spring Data JPA|
@@ -94,6 +71,7 @@
 |大数据|HBase|Hive|Spark|Flink|
 |其它语言|Go|Python|
 |自我修养|设计模式|数据结构与算法|性能测试|
+
 
 ### 锁
  - [CAS] 是java无锁编程的核心机制，底层依赖cpu指令实现比较和替换。 [不可不说的Java“锁”事](https://segmentfault.com/a/1190000017037430)
@@ -125,35 +103,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 编程模型/范式
 
 ## I/O模型
@@ -180,43 +129,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 数据结构
 - [ring buffer](https://en.wikipedia.org/wiki/Circular_buffer) A ring showing, conceptually, a circular buffer. This visually shows that the buffer has no real end and it can loop around the buffer. However, since memory is never physically created as a ring, a linear representation is generally used as is done below. A circular buffer, circular queue, cyclic buffer or ring buffer is a data structure that uses a single, fixed-size buffer as if it were connected end-to-end. This structure lends itself easily to buffering data streams.
 - [6.851: Advanced Data Structures (Fall'17)](http://courses.csail.mit.edu/6.851/fall17/lectures/) - MIT 高级数据结构课程.[youtube 地址](https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf)
 - [数据结构动画网站](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) - 以动画的方式展示数据结构, 非常直观.
-
-
-
-
-
 
 
 
@@ -268,22 +184,6 @@
   - [Algorithms and Data Structures ](http://www.ethoberon.ethz.ch/WirthPubl/AD.pdf) - 算法和数据结构. 综合这两篇论文, 可以得到公式: 程序=数据结构+逻辑+控制  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 数据库
 ## Mysql
 - 书籍
@@ -292,25 +192,11 @@
 ## Elasticsearch
 
 
+# 分布式存储系统
 
+## ceph
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## [fastdfs](https://github.com/happyfish100/fastdfs)
 
 
 # 分布式系统
@@ -326,32 +212,6 @@
 ## 相关框架
 ### distributed tracing system
 - [zipkin](https://zipkin.io/) Zipkin is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in microservice architectures. It manages both the collection and lookup of this data. Zipkin’s design is based on the [Google Dapper](http://research.google.com/pubs/pub36356.html) paper.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # 软件设计
@@ -384,63 +244,11 @@
   - [The Twelve-Factor App](https://12factor.net/)如今，软件通常会作为一种服务来交付，它们被称为网络应用程序，或软件即服务（SaaS）。12-Factor 为构建SaaS 应用提供了方法论，这也是架构师必读的文章。（[中译版](https://12factor.net/zh_cn/)） 这篇文章在业内的影响力很大，必读！
   - [How to Design a Good API & Why it Matters](https://www.infoq.com/presentations/effective-api-design)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 人工智能/机器学习
 - [床长人工智能教程](http://www.captainbed.net/)
 
 ## 资料
 - 基本算法
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -479,51 +287,6 @@
 - [What-are-some-of-the-most-basic-things-every-programmer-should-know](https://www.quora.com/What-are-some-of-the-most-basic-things-every-programmer-should-know)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 工具
 
 ## git
@@ -531,74 +294,8 @@
 - [Git代码行统计命令集](https://blog.csdn.net/dwarven/article/details/46550117)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 软技能
 ### 面试技巧
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # 工具
