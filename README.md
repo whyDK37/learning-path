@@ -41,6 +41,11 @@
     - [JSR 133 (Java Memory Model) FAQ](https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html)
   - [Understanding Java JIT Compilation with JITWatch, Part 1](https://www.oracle.com/technetwork/articles/java/architect-evans-pt1-2266278.html)
   - 字节码技术
+
+### 工具
+#### jdepend https://github.com/clarkware/jdepend
+JDepend traverses Java class and source file directories and generates design quality metrics for each Java package. JDepend allows you to automatically measure the quality of a design in terms of its extensibility, reusability, and maintainability to effectively manage and control package dependencies.
+
 ### 源码
 
 |[功能](iocoder.cn) | # | # | # |  # |# |# |# |
