@@ -46,14 +46,16 @@
 #### jdepend https://github.com/clarkware/jdepend
 JDepend traverses Java class and source file directories and generates design quality metrics for each Java package. JDepend allows you to automatically measure the quality of a design in terms of its extensibility, reusability, and maintainability to effectively manage and control package dependencies.
 
+
+
 ### 源码
 
-|[功能](iocoder.cn) | # | # | # |  # |# |# |# |
+|功能 | # | # | # |  # |# |# |# |
 |---| ----- | -------- | ---------- |---------- |---------- |---------- |---------- |
 |API 网关|[Soul](https://dromara.org/zh-cn/docs/soul/soul.html)|[Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)|[Zuul](https://github.com/Netflix/zuul)|
 |服务调用|Dubbo|SOFA RPC|Motan|Ribbon|
-|服务编排||||
-|服务网格service mesh|[Istio](https://istio.io/)|蚂蚁金服|weibo mesh|
+|服务编排|camel.apache.org|airflow.apache.org||
+|服务网格service mesh|istio.io|蚂蚁金服|weibo mesh|
 |消息队列|RocketMQ|Kafka|RabbitMQ|Pulsar|ActiveMQ|
 |作业调度|Elastic Job Lite|Elastic Job Cloud|Quartz|XXL-Job|
 |注册中心|Eureka|Zookeeper|Nacos|Consul Etcd|
@@ -74,6 +76,7 @@ JDepend traverses Java class and source file directories and generates design qu
 |工具类|RxJava|Guava|
 |容器服务|Linux|Docker|Kubernetes|Swarm|
 |开发工具|Git|Maven|Jenkins|IntelliJ IDEA|
+|测试工具|[moco](https://github.com/dreamhead/moco)|
 |前端框架|React|Vue|Angular|
 |大数据|HBase|Hive|Spark|Flink|
 |其它语言|Go|Python|
@@ -91,6 +94,9 @@ JDepend traverses Java class and source file directories and generates design qu
 
 ### 框架工具
 - [btraceio/btrace](https://github.com/btraceio/btrace) BTrace - a safe, dynamic tracing tool for the Java platform.[Java动态追踪技术探究](https://segmentfault.com/a/1190000018350746#articleHeader3)
+
+- [arthas](https://arthas.aliyun.com/doc/) Arthas 是Alibaba开源的Java诊断工具，深受开发者喜爱。
+  - 手把手教你实现热更新功能，带你了解 Arthas 热更新背后的原理 https://cloud.tencent.com/developer/article/1540142
 
 ### 其他资料
 - [awesome-java](https://github.com/akullpp/awesome-java) - A curated list of awesome Java frameworks, libraries and software.
